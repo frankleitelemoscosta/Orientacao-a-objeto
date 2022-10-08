@@ -8,6 +8,7 @@ int main()
 {
     //inicio das variaveis locais 
     int opcao;
+    string nomedomedico;
     //fim das variaveis locais
 
     //menu para o usuário 
@@ -29,6 +30,9 @@ int main()
 
         switch(opcao){
             case 1:
+                cout<<"Digite o nome do médico"<<endl;
+                getline(cin,nomedomedico);
+            
             break;
             case 12:
                 system("clear");
