@@ -36,3 +36,14 @@ Medico *Medico::obteranterior()
 {
     return anterior;
 }
+
+int Medico::getcrm()
+{
+    return this->crm;
+}
+
+string Medico::getespecialidade()
+{
+    return this->especialidade;
+}
+//fim do código

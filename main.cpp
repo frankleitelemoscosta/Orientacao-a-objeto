@@ -32,6 +32,9 @@ int main()
 
         switch(opcao){
             case 1:
+                
+                cin.ignore();//antes de ser adicionado o campo de especialidade era pulado no terminal
+
                 cout<<"Digite a especialidade do médico"<<endl;
                 getline(cin,especialidade);
 
@@ -49,7 +52,7 @@ int main()
             break;
         }
 
-    }while(opcao!=12);
+    }while(opcao!=11);
     //fim do menu
 
     return 0;

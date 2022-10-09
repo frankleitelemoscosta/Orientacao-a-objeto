@@ -17,6 +17,8 @@ private:
     //fim dos atributos da classe
 public:
 
+    Consultorio();
+
     void cadastrarpaciente();
     bool removerpaciente();
 
