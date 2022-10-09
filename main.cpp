@@ -1,5 +1,6 @@
 //inicio das atribuições do código
 #include<iostream>
+#include"consultorio.hpp"
 //fim das atribuições
 
 using namespace std;
@@ -7,8 +8,9 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao;
-    string nomedomedico;
+    int opcao, CRM;
+    string nomedomedico, especialidade;
+    Consultorio c;
     //fim das variaveis locais
 
     //menu para o usuário 
@@ -30,9 +32,16 @@ int main()
 
         switch(opcao){
             case 1:
-                cout<<"Digite o nome do médico"<<endl;
-                getline(cin,nomedomedico);
-            
+                cout<<"Digite a especialidade do médico"<<endl;
+                getline(cin,especialidade);
+
+                cout<<"Digite o CRM do Médico"<<endl;
+                cin>>CRM;
+
+                c.cadastrarmedico(CRM,especialidade);
+            break;
+            case 4:
+                c.imprimirlistademedicos();
             break;
             case 12:
                 system("clear");
