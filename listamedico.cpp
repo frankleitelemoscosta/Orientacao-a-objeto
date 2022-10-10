@@ -44,6 +44,7 @@ void Listamedico::mostrartodosositens()
 
     while(c)
     {
+        cout<<"-----------------------------------"<<endl;
         cout<<"CRM: "<<c->getcrm()<<endl;
         cout<<"Especialidade do Médico: "<<c->getespecialidade()<<endl;
         cout<<"-----------------------------------"<<endl;
@@ -59,19 +60,43 @@ void Listamedico::remover(int crmremover)
     Medico *a = new Medico();//essa serve para pegar o nó anterior
     Medico *s = new Medico();//esse serve para pegar o nó sucessor
     c = cabeca;
+    int cont1=0,cont2=0;
     //fim das variaveis da função
 
     while(c)
     {
         if(c->getcrm()==crmremover)
         {
-            a = c->obteranterior();
-            s = c->obterprox();
-            
+            if(c->obteranterior()!=nullptr)
+            {
+                a = c->obteranterior();
+                cont1++;
+            }
+            if(c->obterprox()!=nullptr)
+            {
+                s = c->obterprox();
+                cont2++;
+            }
             //removendo o nó do c
-            a->setprox(s);
-            s->setanterior(a);
+            if(cont1!=0 && cont2!=0)//aqui é o caso onde pego um nó no meio da lista
+            {
+                a->setprox(s);
 
+            }else if(cont1!=0 && cont2==0)//aqui é o caso onde pegou um nó final da lista
+            {
+                a->setprox(nullptr);
+            }
+            if(cont2!=0 && cont1!=0)//aqui é um caso no meio da lista
+            {
+                s->setanterior(a);
+
+            }else if(cont2!=0  && cont1==0)//aqui é um caso no inicio da lista
+            {
+                s->setanterior(nullptr);
+                cabeca = s;
+            }
+            cont1=0;
+            cont2=0;
         }
         c = c->obterprox();
     }
