@@ -19,6 +19,7 @@ public:
     bool vazia();
     void inserir_no_final();
     void mostrartodosositens();
+    void remover(int remover);
 
     //fim dos métodos
 };

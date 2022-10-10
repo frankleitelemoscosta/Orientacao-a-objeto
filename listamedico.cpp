@@ -29,6 +29,8 @@ void Listamedico::inserir_no_inicio(int crm,string especialidade)
         novo_no->setprox(cabeca);
         cabeca->setanterior(novo_no);
         novo_no->setanterior(nullptr);
+
+        cabeca = novo_no;
     }
     cabeca->setcrm(crm);
     cabeca->setespecialidade(especialidade);
@@ -49,3 +51,30 @@ void Listamedico::mostrartodosositens()
         c = c->obterprox();
     }
 }
+
+void Listamedico::remover(int crmremover)
+{
+    //variaveis da função
+    Medico *c = new Medico();//essa corre a lista
+    Medico *a = new Medico();//essa serve para pegar o nó anterior
+    Medico *s = new Medico();//esse serve para pegar o nó sucessor
+    c = cabeca;
+    //fim das variaveis da função
+
+    while(c)
+    {
+        if(c->getcrm()==crmremover)
+        {
+            a = c->obteranterior();
+            s = c->obterprox();
+            
+            //removendo o nó do c
+            a->setprox(s);
+            s->setanterior(a);
+
+        }
+        c = c->obterprox();
+    }
+}
+
+//fim do código

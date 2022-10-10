@@ -16,3 +16,10 @@ void Consultorio::imprimirlistademedicos()
 {
     l.mostrartodosositens();
 }
+
+bool Consultorio::removermedico(int crmremover)
+{
+    l.remover(crmremover);
+}
+
+//fim do codigo

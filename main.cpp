@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao, CRM;
+    int opcao, CRM, crmremover;
     string nomedomedico, especialidade;
     Consultorio c;
     //fim das variaveis locais
@@ -45,6 +45,12 @@ int main()
             break;
             case 4:
                 c.imprimirlistademedicos();
+            break;
+            case 8:
+                cout<<"Digite o CRM do médico"<<endl;
+                cin>>crmremover;
+
+                c.removermedico(crmremover);
             break;
             case 12:
                 system("clear");
