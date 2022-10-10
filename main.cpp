@@ -8,9 +8,10 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao, CRM, crmremover;
-    string nomedomedico, especialidade;
+    int opcao, CRM, crmremover, CPFdomedico ;
+    string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico;
     Consultorio c;
+    char sexo;
     //fim das variaveis locais
 
     //menu para o usuário 
@@ -35,13 +36,31 @@ int main()
                 
                 cin.ignore();//antes de ser adicionado o campo de especialidade era pulado no terminal
 
+                cout<<"Digite o nome do médico"<<endl;
+                getline(cin,nomedomedico);
+
+                cout<<"Digite o CPF do médico"<<endl;
+                cin>>CPFdomedico;
+
+                cout<<"Digite o telefone do médico"<<endl;
+                getline(cin,telefonedomedico);
+
+                cout<<"Digite o endereco do medico"<<endl;
+                getline(cin,enderecodomedico);
+
                 cout<<"Digite a especialidade do médico"<<endl;
                 getline(cin,especialidade);
+
+                cout<<"Digite o RG do médico"<<endl;
+                getline(cin,identidadedomedico);
+
+                cout<<"Me diga: é benina ou é benino, benino(a)?"<<endl;
+                cin>>sexo;
 
                 cout<<"Digite o CRM do Médico"<<endl;
                 cin>>CRM;
 
-                c.cadastrarmedico(CRM,especialidade);
+                c.cadastrarmedico(CRM,especialidade,nomedomedico,CPFdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
             break;
             case 4:
                 c.imprimirlistademedicos();

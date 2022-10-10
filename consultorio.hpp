@@ -22,7 +22,7 @@ public:
     void cadastrarpaciente();
     bool removerpaciente();
 
-    void cadastrarmedico(int crm,string especialidade);
+    void cadastrarmedico(int crm,string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico);
     bool removermedico(int crmremover);
 
     void cadastrarconsulta();

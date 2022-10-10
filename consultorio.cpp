@@ -7,9 +7,9 @@ Consultorio::Consultorio()//construtor
 
 }
 
-void Consultorio::cadastrarmedico(int crm, string especialidade)
+void Consultorio::cadastrarmedico(int crm, string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico)
 {
-    l.inserir_no_inicio(crm,especialidade);
+    l.inserir_no_inicio(crm,especialidade,nomedomedico,cpfdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
 }
 
 void Consultorio::imprimirlistademedicos()

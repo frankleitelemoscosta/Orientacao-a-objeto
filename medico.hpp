@@ -4,10 +4,12 @@
 //inicio das atribuições
 #include<iostream>
 using namespace std;
+#include"Pessoa.hpp"
 //fim das atribições
 
 
-class Medico{
+class Medico: public Pessoa
+{
 private:
     int crm;
     string especialidade;

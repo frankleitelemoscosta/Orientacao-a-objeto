@@ -14,7 +14,7 @@ bool Listamedico::vazia()
     return (cabeca==nullptr);
 }
 
-void Listamedico::inserir_no_inicio(int crm,string especialidade)
+void Listamedico::inserir_no_inicio(int crm,string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico)
 {
     Medico *novo_no = new Medico();
 
@@ -34,7 +34,12 @@ void Listamedico::inserir_no_inicio(int crm,string especialidade)
     }
     cabeca->setcrm(crm);
     cabeca->setespecialidade(especialidade);
-    
+    cabeca->setnome(nomedomedico);
+    cabeca->setcpf(cpfdomedico);
+    cabeca->setendereco(enderecodomedico);
+    cabeca->setidentidade(identidadedomedico);
+    cabeca->setsexo(sexo);
+    cabeca->settelefone(telefonedomedico);
 }
 
 void Listamedico::mostrartodosositens()
@@ -45,6 +50,11 @@ void Listamedico::mostrartodosositens()
     while(c)
     {
         cout<<"-----------------------------------"<<endl;
+        cout<<"Nome do Médico: "<<c->getnome()<<endl;
+        cout<<"CPF do médico: "<<c->getcpf()<<endl;
+        cout<<"Identidade do médico: "<<c->getidentidade()<<endl;
+        cout<<"Endereço do médico: "<<c->getendereco()<<endl;
+        cout<<"Telefone: "<<c->gettelefone()<<endl;
         cout<<"CRM: "<<c->getcrm()<<endl;
         cout<<"Especialidade do Médico: "<<c->getespecialidade()<<endl;
         cout<<"-----------------------------------"<<endl;
