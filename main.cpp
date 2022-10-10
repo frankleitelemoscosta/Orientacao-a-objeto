@@ -42,6 +42,8 @@ int main()
                 cout<<"Digite o CPF do médico"<<endl;
                 cin>>CPFdomedico;
 
+                cin.ignore();
+
                 cout<<"Digite o telefone do médico"<<endl;
                 getline(cin,telefonedomedico);
 
