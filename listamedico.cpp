@@ -105,6 +105,11 @@ void Listamedico::remover(int crmremover)
                 s->setanterior(nullptr);
                 cabeca = s;
             }
+            if(cont1==0 && cont2==0)///caso onde tem se apenas um elemento
+            {
+                cabeca = nullptr;
+                cauda = nullptr;
+            }
             cont1=0;
             cont2=0;
         }
