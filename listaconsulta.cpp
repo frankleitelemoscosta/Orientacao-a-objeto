@@ -13,7 +13,7 @@ bool Listaconsulta::vazia()
     return (cabeca==nullptr);
 }
 
-void Listaconsulta::inserir_na_lista(int cpfpaciente,int CRMmedico,string hora)
+void Listaconsulta::inserir_na_lista(int cpfpaciente,int CRMmedico,string hora,int dia, int mes, int ano)
 {
     Consulta *novo_no = new Consulta();
 
@@ -31,6 +31,7 @@ void Listaconsulta::inserir_na_lista(int cpfpaciente,int CRMmedico,string hora)
     cabeca->setcpfpaciente(cpfpaciente);
     cabeca->setCRMmedico(CRMmedico);
     cabeca->sethora(hora);
+    cabeca->setdata(dia,mes,ano);
 }
 
 void Listaconsulta::mostrartodosositens()
@@ -41,6 +42,7 @@ void Listaconsulta::mostrartodosositens()
     while(c)
     {
         cout<<"------------------------------------------------"<<endl;
+        cout<<"Data da consulta: "<<c->getdata()<<endl;
         cout<<"Hora da consulta: "<<c->gethora()<<endl;
         cout<<"CRM do médico que atenderá o paciente: "<<c->getCRMmedico()<<endl;
         cout<<"cpf do paciente: "<<c->getcpfpaciente()<<endl;

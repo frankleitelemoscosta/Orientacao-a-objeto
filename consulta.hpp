@@ -4,6 +4,7 @@
 //inicio das atribuições 
 #include<iostream>
 using namespace std;
+#include"data.hpp"
 //fim das atribuições do código
 
 
@@ -14,10 +15,14 @@ private:
     int CRMmedico;
     Consulta *proximo;
     Consulta *anterior;
+    Data data;
 //fim dos atribuitos da classe
 public:
 
     Consulta();//construtor
+
+    void setdata(int dia, int mes, int ano);
+    int getdata();
 
     void setproximo(Consulta *ponteiro);
     Consulta *obterproximo();

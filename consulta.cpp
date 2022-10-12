@@ -33,6 +33,12 @@ void Consulta::sethora(string hora)
     this->hora = hora;
 }
 
+void Consulta::setdata(int dia, int mes, int ano)
+{
+    data.setdia(dia);
+    data.setmes(mes);
+    data.setano(ano);
+}
 
 void Consulta::setcpfpaciente(int cpfpaciente)
 {
@@ -59,6 +65,13 @@ int Consulta::getcpfpaciente()
 int Consulta::getCRMmedico()
 {
     return CRMmedico;
+}
+
+int Consulta::getdata()
+{
+    cout<<"dia da consulta: "<<data.getdia()<<endl;
+    cout<<"mes da consulta: "<<data.getmes()<<endl;
+    cout<<"ano da consulta: "<<data.getano()<<endl;
 }
 //fim dos gets
 

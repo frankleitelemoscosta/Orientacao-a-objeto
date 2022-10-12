@@ -8,7 +8,7 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao, CRM, crmremover, CPFdomedico, cpfpaciente ;
+    int opcao, CRM, crmremover, CPFdomedico, cpfpaciente, dia, mes, ano ;
     string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico,horaconsulta;
     Consultorio c;
     char sexo;
@@ -66,6 +66,11 @@ int main()
             break;
             case 3:
 
+                cout<<"Digite para mim o dia, mes e ano da consulta: "<<endl;
+                cin>>dia;
+                cin>>mes;
+                cin>>ano;
+
                 cin.ignore();
 
                 cout<<"Qual a hora que será efetuada a consulta? "<<endl;
@@ -77,7 +82,7 @@ int main()
                 cout<<"Qual é o CRM do médico que efetuará a consulta?"<<endl;
                 cin>>CRM;
                 
-                c.cadastrarconsulta(horaconsulta,cpfpaciente,CRM);
+                c.cadastrarconsulta(horaconsulta,cpfpaciente,CRM,dia,mes,ano);
 
             break;
             case 4:

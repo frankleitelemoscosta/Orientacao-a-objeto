@@ -13,7 +13,7 @@ private:
 public:
     Listaconsulta();//construtor
 
-    void inserir_na_lista(int cpfpaciente,int CRMmedico,string hora);
+    void inserir_na_lista(int cpfpaciente,int CRMmedico,string hora,int dia, int mes, int ano);
     bool vazia();
     bool remover(int cpfpaciente);
     void mostrartodosositens();

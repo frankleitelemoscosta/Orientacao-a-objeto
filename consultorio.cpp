@@ -22,9 +22,9 @@ bool Consultorio::removermedico(int crmremover)
     l.remover(crmremover);
 }
 
-void Consultorio::cadastrarconsulta(string hora, int cpfpaciente, int CRMmedico)
+void Consultorio::cadastrarconsulta(string hora, int cpfpaciente, int CRMmedico,int dia, int mes, int ano)
 {
-    v.inserir_na_lista(cpfpaciente,CRMmedico,hora);
+    v.inserir_na_lista(cpfpaciente,CRMmedico,hora,dia,mes,ano);
 }
 
 void Consultorio::imprimirconsultas()
