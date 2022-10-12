@@ -8,8 +8,8 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao, CRM, crmremover, CPFdomedico ;
-    string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico;
+    int opcao, CRM, crmremover, CPFdomedico, cpfpaciente ;
+    string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico,horaconsulta;
     Consultorio c;
     char sexo;
     //fim das variaveis locais
@@ -64,14 +64,39 @@ int main()
 
                 c.cadastrarmedico(CRM,especialidade,nomedomedico,CPFdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
             break;
+            case 3:
+
+                cin.ignore();
+
+                cout<<"Qual a hora que será efetuada a consulta? "<<endl;
+                getline(cin,horaconsulta);
+
+                cout<<"Qual é o cpf do paciente que vai consultar? "<<endl;
+                cin>>cpfpaciente;
+
+                cout<<"Qual é o CRM do médico que efetuará a consulta?"<<endl;
+                cin>>CRM;
+                
+                c.cadastrarconsulta(horaconsulta,cpfpaciente,CRM);
+
+            break;
             case 4:
                 c.imprimirlistademedicos();
+            break;
+            case 5:
+                c.imprimirconsultas();
             break;
             case 8:
                 cout<<"Digite o CRM do médico"<<endl;
                 cin>>crmremover;
 
                 c.removermedico(crmremover);
+            break;
+            case 10:
+                cout<<"Digite o CPF do pacinte que você deseja excluir a consulta"<<endl;
+                cin>>cpfpaciente;
+
+                c.removerconsulta(cpfpaciente);
             break;
             case 12:
                 system("clear");
@@ -80,7 +105,7 @@ int main()
         }
 
     }while(opcao!=11);
-    //fim do menu
+       //fim do menu
 
     return 0;
 }
