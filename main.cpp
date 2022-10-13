@@ -9,7 +9,8 @@ int main()
 {
     //inicio das variaveis locais 
     int opcao, CRM, crmremover, CPFdomedico, cpfpaciente, dia, mes, ano ;
-    string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico,horaconsulta;
+    string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico;
+    string horaconsulta,nomepaciente,enderecodopaciente,telefonepaciente,relato,medicacao,dataultimaconsulta,identidadedopaciente;
     Consultorio c;
     char sexo;
     //fim das variaveis locais
@@ -64,6 +65,31 @@ int main()
 
                 c.cadastrarmedico(CRM,especialidade,nomedomedico,CPFdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
             break;
+            case 2:
+
+            cout<<"Digite o nome do enfermo"<<endl;
+            getline(cin,nomepaciente);
+
+            cout<<"Digite o cpf do paciente"<<endl;
+            cin>>cpfpaciente;
+
+            cout<<"Digite o sexo desse paciente"<<endl;
+            cin>>sexo;
+
+            cout<<"Digite o endereco do paciente"<<endl;
+            getline(cin,enderecodopaciente);
+
+            cout<<"Digite o telefone do paciente"<<endl;
+            getline(cin,telefonepaciente);
+
+            cout<<"Digite o relato do paciente"<<endl;
+            getline(cin,relato);
+
+            cout<<"Digite a identidade do paciente"<<endl;
+            getline(cin,identidadedopaciente);
+
+            c.cadastrarpaciente(relato,dataultimaconsulta,medicacao,cpfpaciente,nomepaciente,enderecodopaciente,telefonepaciente,sexo,identidadedopaciente);
+
             case 3:
 
                 cout<<"Digite para mim o dia, mes e ano da consulta: "<<endl;
@@ -90,6 +116,9 @@ int main()
             break;
             case 5:
                 c.imprimirconsultas();
+            break;
+            case 6:
+                c.imprimirlistadepacientes();
             break;
             case 8:
                 cout<<"Digite o CRM do médico"<<endl;

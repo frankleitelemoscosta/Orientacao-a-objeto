@@ -6,6 +6,7 @@
 using namespace std;
 #include"listamedico.hpp"
 #include"listaconsulta.hpp"
+#include"listapaciente.hpp"
 //fim das atribuições
 
 class Consultorio{
@@ -15,13 +16,14 @@ private:
     int telefonedoconsultorio;
     Listamedico l;
     Listaconsulta v;
+    Listapaciente p;
 
     //fim dos atributos da classe
 public:
 
     Consultorio();
 
-    void cadastrarpaciente();
+    void cadastrarpaciente(string relato, string datadaultimaconsulta,string medicacao,int cpf,string nome, string endereco, string telefone, char sexo,string identidade);
     bool removerpaciente();
 
     void cadastrarmedico(int crm,string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico);

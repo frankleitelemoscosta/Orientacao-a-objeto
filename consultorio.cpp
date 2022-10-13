@@ -37,4 +37,14 @@ bool Consultorio::removerconsulta(int cpfpaciente)
     v.remover(cpfpaciente);
 }
 
+void Consultorio::cadastrarpaciente(string relato, string datadaultimaconsulta,string medicacao,int cpf,string nome, string endereco, string telefone, char sexo,string identidade)
+{
+    p.inserir_na_lista(cpf,nome,sexo,endereco,telefone,identidade);
+}
+
+void Consultorio::imprimirlistadepacientes()
+{
+    p.mostrartodos();
+}
+
 //fim do codigo
