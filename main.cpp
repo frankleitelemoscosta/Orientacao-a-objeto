@@ -67,6 +67,8 @@ int main()
             break;
             case 2:
 
+            cin.ignore();
+
             cout<<"Digite o nome do enfermo"<<endl;
             getline(cin,nomepaciente);
 

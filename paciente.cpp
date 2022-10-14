@@ -23,6 +23,11 @@ void Paciente::setanterior(Paciente *ponteiro)
     this->anterior = ponteiro;
 }
 
+Paciente *Paciente::obteranterior()
+{
+    return anterior;
+}
+
 void Paciente::setrelato(string relado)
 {
     this->relato = relato;
