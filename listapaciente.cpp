@@ -54,6 +54,20 @@ void Listapaciente::mostrartodos()
     }
 }
 
+void Listapaciente::tamanho_da_lista()
+{
+    int tam=0;
+    Paciente *contador = new Paciente();
+    contador = cabeca;
+
+    while(contador)
+    {
+        tam++;
+        contador = contador->obterproximo();
+    }
+    cout<<"numero de pacientes: "<<tam<<endl;
+}
+
 bool Listapaciente::remover(string nome)
 {
     Paciente *c = new Paciente();//essa corre a lista

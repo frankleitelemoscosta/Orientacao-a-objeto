@@ -22,6 +22,7 @@ public:
     bool remover(string nome);
     bool vazia();
     void mostrartodos();
+    void tamanho_da_lista();
 
 //fim dos métodos
 };

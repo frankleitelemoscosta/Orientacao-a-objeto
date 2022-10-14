@@ -36,6 +36,7 @@ public:
     void imprimirconsultas();
     void imprimirconsultasdomedico();
     void imprimirlistademedicos();
+    void numerodepacientes();
     
     //fim dos métodos
 };

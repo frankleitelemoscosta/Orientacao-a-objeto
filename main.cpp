@@ -78,6 +78,8 @@ int main()
             cout<<"Digite o sexo desse paciente"<<endl;
             cin>>sexo;
 
+            cin.ignore();
+
             cout<<"Digite o endereco do paciente"<<endl;
             getline(cin,enderecodopaciente);
 
@@ -92,6 +94,7 @@ int main()
 
             c.cadastrarpaciente(relato,dataultimaconsulta,medicacao,cpfpaciente,nomepaciente,enderecodopaciente,telefonepaciente,sexo,identidadedopaciente);
 
+            break;
             case 3:
 
                 cout<<"Digite para mim o dia, mes e ano da consulta: "<<endl;
