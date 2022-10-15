@@ -53,4 +53,9 @@ void Consultorio::numerodepacientes()
     p.tamanho_da_lista();
 }
 
+bool Consultorio::removerpaciente(string nomedopaciente)
+{
+    p.remover(nomedopaciente);
+}
+
 //fim do codigo

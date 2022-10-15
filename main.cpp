@@ -131,6 +131,14 @@ int main()
 
                 c.removermedico(crmremover);
             break;
+            case 9:
+                cin.ignore();
+
+                cout<<"Digite o nome do paciente: "<<endl;
+                getline(cin,nomepaciente);
+
+                c.removerpaciente(nomepaciente);
+            break;
             case 10:
                 cout<<"Digite o CPF do pacinte que você deseja excluir a consulta"<<endl;
                 cin>>cpfpaciente;
