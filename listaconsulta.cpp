@@ -42,7 +42,7 @@ void Listaconsulta::mostrartodosositens()
     while(c)
     {
         cout<<"------------------------------------------------"<<endl;
-        cout<<"Data da consulta: "<<c->getdata()<<endl;
+        cout<<"Data da consulta: "<<c->getdata()<<endl;//o erro é gerado aqui
         cout<<"Hora da consulta: "<<c->gethora()<<endl;
         cout<<"CRM do médico que atenderá o paciente: "<<c->getCRMmedico()<<endl;
         cout<<"cpf do paciente: "<<c->getcpfpaciente()<<endl;

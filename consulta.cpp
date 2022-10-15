@@ -71,7 +71,9 @@ int Consulta::getdata()
 {
     cout<<"dia da consulta: "<<data.getdia()<<endl;
     cout<<"mes da consulta: "<<data.getmes()<<endl;
-    cout<<"ano da consulta: "<<data.getano()<<endl;
+    cout<<"ano da consulta: ";
+
+    return data.getano();
 }
 //fim dos gets
 
