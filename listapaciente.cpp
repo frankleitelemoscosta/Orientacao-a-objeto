@@ -22,6 +22,8 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
     Paciente *corredor = new Paciente();
     corredor = cabeca;
 
+    string sobrenome;
+
     if(vazia())
     {
         cabeca = novo_no;
@@ -35,6 +37,17 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
         {
             cout<<"Esse paciente ja foi cadastrado!"<<endl;
             return ;
+        }
+        else if(corredor->getcpf()==cpfpaciente)
+        {
+            cout<<"Esse CPF pertence a: "<<corredor->getnome()<<", e não a: "<<nome<<endl;
+            cout<<"Reveja se os dados do pacientes que você quer cadastrar estão corretos!"<<endl;
+        }else if(corredor->getcpf()!=cpfpaciente && corredor->getnome()==nome)
+        {
+            cout<<"Esse nome ja esta na lista de pacientes, porem o cpf do sujeito é diferente, digite um sobrenome para diferenciarmos os infelizes: "<<endl;
+            getline(cin,sobrenome);
+
+            nome = nome+" "+sobrenome;
         }
 
         corredor = corredor->obterproximo();
