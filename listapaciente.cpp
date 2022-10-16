@@ -28,6 +28,23 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
         cabeca = novo_no;
         cabeca->setanterior(nullptr);
     }
+
+    //agora jé verificado, se já não existe um paciente com o mesmo nome ou cpf
+
+    Paciente *corredor = new Paciente();
+    corredor = cabeca;
+
+    while(corredor)
+    {
+        if(corredor->getnome()==nome && corredor->getcpf()==cpfpaciente)
+        {
+            cout<<"Esse paciente ja foi cadastrado!"<<endl;
+            return ;
+        }
+
+        corredor = corredor->obterproximo();
+    }
+    
     cabeca->setcpf(cpfpaciente);
     cabeca->setnome(nome);
     cabeca->setsexo(sexo);
@@ -45,6 +62,7 @@ void Listapaciente::mostrartodos()
     {
         cout<<"------------------------------------------------"<<endl;
         cout<<"Nome do paciente: "<<c->getnome()<<endl;
+        cout<<"CPF: "<<c->getcpf()<<endl;
         cout<<"Se é benina(F) ou benino(M): "<<c->getsexo()<<endl;
         cout<<"Endereço do paciente: "<<c->getendereco()<<endl;
         cout<<"Telefone do paciente: "<<c->gettelefone()<<endl;
