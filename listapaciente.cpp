@@ -17,22 +17,17 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
 {
     Paciente *novo_no = new Paciente();
 
+    //agora jé verificado, se já não existe um paciente com o mesmo nome ou cpf
+
+    Paciente *corredor = new Paciente();
+    corredor = cabeca;
+
     if(vazia())
     {
         cabeca = novo_no;
         cauda = novo_no;
     }
     else{
-        cabeca->setanterior(novo_no);
-        novo_no->setproximo(cabeca);
-        cabeca = novo_no;
-        cabeca->setanterior(nullptr);
-    }
-
-    //agora jé verificado, se já não existe um paciente com o mesmo nome ou cpf
-
-    Paciente *corredor = new Paciente();
-    corredor = cabeca;
 
     while(corredor)
     {
@@ -44,7 +39,13 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
 
         corredor = corredor->obterproximo();
     }
-    
+        cabeca->setanterior(novo_no);
+        novo_no->setproximo(cabeca);
+        cabeca = novo_no;
+        cabeca->setanterior(nullptr);
+    }
+
+
     cabeca->setcpf(cpfpaciente);
     cabeca->setnome(nome);
     cabeca->setsexo(sexo);
