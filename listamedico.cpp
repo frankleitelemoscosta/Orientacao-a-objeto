@@ -16,7 +16,14 @@ bool Listamedico::vazia()
 
 void Listamedico::inserir_no_inicio(int crm,string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico)
 {
+    //inicio das variaveis locais
     Medico *novo_no = new Medico();
+
+    Medico *corredor = new Medico();
+    corredor = cabeca;
+
+    string sobrenome;
+    //fim das variaveis locais
 
     if(vazia())
     {
@@ -26,6 +33,39 @@ void Listamedico::inserir_no_inicio(int crm,string especialidade,string nomedome
         cabeca->setprox(nullptr);
     }
     else{
+
+        while(corredor)
+        {
+            if(corredor->getcrm()==crm && corredor->getcpf()==cpfdomedico)
+            {
+                cout<<"Esse médico ja esta cadastrado"<<endl;
+                return;
+            }
+            else if(corredor->getcrm()==crm)
+            {
+                cout<<"um medico com o mesmo crm ja foi cadastrado, revise se as informações estão corretas e refaça o cadastro"<<endl;
+                return;
+            }
+            else if(corredor->getcpf()==cpfdomedico)
+            {
+                cout<<"Um médico cadastrado ja possui esse cpf, revise as informações e refaça o cadastro"<<endl;
+                return;
+            }
+            else if(corredor->getidentidade()==identidadedomedico)
+            {
+                cout<<"Ja temos um médico com esse mesmo RG, verifique os dados deste médico e refaça o cadastro!"<<endl;
+                return;
+            }
+            else if(corredor->getnome() == nomedomedico && corredor->getcrm() != crm && corredor->getidentidade() != identidadedomedico)
+            {
+                cout<<"Temos dois médicos com esse mesmo nome, adicione um sobrenome para diferencia-los"<<endl;
+                getline(cin,sobrenome);
+            
+                nomedomedico = nomedomedico + " " + sobrenome;
+            }
+
+        }
+
         novo_no->setprox(cabeca);
         cabeca->setanterior(novo_no);
         novo_no->setanterior(nullptr);
