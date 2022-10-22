@@ -8,10 +8,12 @@ using namespace std;
 int main()
 {
     //inicio das variaveis locais 
-    int opcao, CRM, crmremover, CPFdomedico, cpfpaciente, dia, mes, ano ;
+    int opcao, CRM, crmremover, CPFdomedico, cpfpaciente, dia, mes, ano,tam = 0,inicio = 1, verificador = 0,inicio2 = 1, tam2 = 0 ;
     string nomedomedico, especialidade, telefonedomedico, enderecodomedico, identidadedomedico;
     string horaconsulta,nomepaciente,enderecodopaciente,telefonepaciente,relato,medicacao,dataultimaconsulta,identidadedopaciente;
     Consultorio c;
+    int *vetor = new int(inicio);
+    int *vetor2 = new int(inicio2);
     char sexo;
     //fim das variaveis locais
 
@@ -63,6 +65,16 @@ int main()
                 cout<<"Digite o CRM do Médico"<<endl;
                 cin>>CRM;
 
+                if(tam>=inicio)
+                {
+                    inicio = tam;
+                    vetor = new int(inicio);
+                }
+
+                vetor[tam]=CRM;
+
+                tam++;
+
                 c.cadastrarmedico(CRM,especialidade,nomedomedico,CPFdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
             break;
             case 2:
@@ -92,6 +104,16 @@ int main()
             cout<<"Digite a identidade do paciente"<<endl;
             getline(cin,identidadedopaciente);
 
+            if(tam2>=inicio2)
+            {
+                inicio2 = tam2;
+                vetor2 = new int(inicio2);
+            }
+
+            vetor2[tam2] = cpfpaciente;
+
+            tam2++;
+
             c.cadastrarpaciente(relato,dataultimaconsulta,medicacao,cpfpaciente,nomepaciente,enderecodopaciente,telefonepaciente,sexo,identidadedopaciente);
 
             break;
@@ -112,8 +134,23 @@ int main()
 
                 cout<<"Qual é o CRM do médico que efetuará a consulta?"<<endl;
                 cin>>CRM;
-                
-                c.cadastrarconsulta(horaconsulta,cpfpaciente,CRM,dia,mes,ano);
+
+                for(int i=0; i<tam;i++)
+                {
+                    if(vetor[i]==CRM && vetor2[i]==cpfpaciente)
+                    {
+                        c.cadastrarconsulta(horaconsulta,cpfpaciente,CRM,dia,mes,ano);
+                        verificador++;
+                    }
+                    
+                }
+                if(verificador==0)
+                {
+                        cout<<"Negão esse médico nem trabalha aqui ou esse paciente não esta cadastrado, revise as informações e refaça o cadastro da consulta"<<endl;
+                }else if(verificador == 1)
+                {
+                    verificador = 0;
+                }
 
             break;
             case 4:

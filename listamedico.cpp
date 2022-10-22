@@ -58,12 +58,13 @@ void Listamedico::inserir_no_inicio(int crm,string especialidade,string nomedome
             }
             else if(corredor->getnome() == nomedomedico && corredor->getcrm() != crm && corredor->getidentidade() != identidadedomedico)
             {
+                cin.ignore();
                 cout<<"Temos dois médicos com esse mesmo nome, adicione um sobrenome para diferencia-los"<<endl;
                 getline(cin,sobrenome);
             
                 nomedomedico = nomedomedico + " " + sobrenome;
             }
-
+            corredor = corredor->obterprox();
         }
 
         novo_no->setprox(cabeca);
