@@ -31,6 +31,9 @@
     estava funcionando sem nenhum erro, porem observe que nesse caso as funcionalidade do menu ainda não estavam
     implementadas, porem era possível escolher uma opção mesmo que ela não proporcionace algum resultado definitivo.
 
-# RESULTADOS DO PRIMEIRO CASOS
+# RESULTADOS DO PRIMEIRO CASO
+
+![primeiroteste](https://user-images.githubusercontent.com/107070061/197371828-3d6ef9fb-ee2d-4477-a616-318eeea9b82e.png)
+
 
     
