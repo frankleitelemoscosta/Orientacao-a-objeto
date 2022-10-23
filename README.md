@@ -46,4 +46,30 @@
     Os primeiros resultados foram positivos, como mostrado nas imagens
     o menu não apresentou nenhum erro, e apresoutou as
     informações ao usuário como esperado.
-    
+
+        O segundo teste foi o de cadastro de um medico no sistema, porem de primeira mão
+    o que foi implementado apenas foi a inserção do crm do médico e sua especialidade, pois
+    a classe onde estaria informações pessoais como nome, cpf, endereço seria uma classe compar-
+    tilhada com outras como a classe paciente, que tambem pode ter as mesmas catacterísticas.
+
+# RESULTADOS DO SEGUNDO CASO DE TESTE
+
+        Em uma primeira tentativa ocorreu um pequeno erro, devido a introdução 
+    de um construtor vazio em uma classe e a não declaração do mesmo no arquivo
+    hpp dessa classe, o print a seguir evidencia o erro.
+
+![segundoteste](https://user-images.githubusercontent.com/107070061/197396494-15b50c94-459a-425f-b79d-3b86ea4b9ed0.png)
+
+        Após a correção desse erro foi realizado um segundo teste, com os seguintes resultados:
+
+![correçãodoerrodosegundoteste](https://user-images.githubusercontent.com/107070061/197398196-5f5c2d9e-d53c-41dc-867e-f97a8e966656.png)
+
+    como mostra a imagem o cadastro do médico ainda se tratava de apenas de inserir o CRM e sua 
+    especialização.
+
+![correcaodosegundoteste](https://user-images.githubusercontent.com/107070061/197398299-109794ef-033b-45c8-ae33-6d2d388317f3.png)
+
+        Essa segunda imagem mostra o resultado da impressão das informações dos médicos cadastrados,
+    afirmando o sucesso na implementação da classe medico e sua lista.
+
+
