@@ -63,12 +63,19 @@ void Consultorio::imprimirlistadepacientes(int cpf)
 
 void Consultorio::numerodepacientes()
 {
-    p.tamanho_da_lista();
+    p.getnumerodepacientes();
 }
 
 bool Consultorio::removerpaciente(string nomedopaciente)
 {
     p.remover(nomedopaciente);
+}
+
+void Consultorio::pesquisaconsulta(int cpf,int crm,string hora)
+{
+    p.mostrarnome(cpf);
+    v.procuradaconsulta(cpf,hora);
+    l.pesquisamedico(crm);
 }
 
 //fim do codigo

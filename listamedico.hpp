@@ -28,6 +28,8 @@ public:
 
     void pesquisarcrm(int CRM);
 
+    void pesquisamedico(int CRM);
+
     char getresultado();
 
     //fim dos métodos

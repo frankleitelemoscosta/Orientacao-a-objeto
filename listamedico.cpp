@@ -182,4 +182,20 @@ char Listamedico::getresultado()
     return this->resultado;
 }
 
+void Listamedico::pesquisamedico(int crm)
+{
+    Medico *corredor = new Medico();
+    corredor = cabeca;
+
+    while(corredor)
+    {
+        if(corredor->getcrm()==crm)
+        {
+            cout<<"Vai ter uma consulta com o medico: "<<corredor->getnome()<<endl;
+        }
+        corredor = corredor->obterprox();
+    }
+
+}
+
 //fim do código

@@ -8,6 +8,7 @@ Listapaciente::Listapaciente()
 {
     cabeca = nullptr;
     cauda = nullptr;
+    this->numerodepacientes=0;
 }
 
 bool Listapaciente::vazia()
@@ -60,7 +61,7 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
         cabeca->setanterior(nullptr);
     }
 
-
+    this->numerodepacientes++;
     cabeca->setcpf(cpfpaciente);
     cabeca->setnome(nome);
     cabeca->setsexo(sexo);
@@ -90,20 +91,6 @@ void Listapaciente::mostrarpaciente(int cpf)
         }
         c = c->obterproximo();
     }
-}
-
-void Listapaciente::tamanho_da_lista()
-{
-    int tam=0;
-    Paciente *contador = new Paciente();
-    contador = cabeca;
-
-    while(contador)
-    {
-        tam++;
-        contador = contador->obterproximo();
-    }
-    cout<<"numero de pacientes: "<<tam<<endl;
 }
 
 bool Listapaciente::remover(string nome)
@@ -154,6 +141,7 @@ bool Listapaciente::remover(string nome)
             }
             cont1=0;
             cont2=0;
+            this->numerodepacientes--;
         }
         c = c->obterproximo();
     }
@@ -211,6 +199,27 @@ void Listapaciente::cadastrodadatadaultimaconsulta(int cpf,int dia,int mes, int 
         if(corredor->getcpf()==cpf)
         {
             corredor->setdataultimaconsulta(data);
+        }
+        corredor = corredor->obterproximo();
+    }
+
+}
+
+int Listapaciente::getnumerodepacientes()
+{
+    return this->numerodepacientes;
+}
+
+void Listapaciente::mostrarnome(int cpf)
+{   
+    Paciente *corredor = new Paciente();
+    corredor = cabeca;
+
+    while(corredor)
+    {
+        if(corredor->getcpf()==cpf)
+        {
+            cout<<"O paciente: "<<corredor->getnome()<<endl;
         }
         corredor = corredor->obterproximo();
     }

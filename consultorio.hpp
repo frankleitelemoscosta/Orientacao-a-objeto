@@ -37,6 +37,8 @@ public:
     void imprimirconsultasdomedico();
     void imprimirlistademedicos(int crm);
     void numerodepacientes();
+
+    void pesquisaconsulta(int cpf, int crm, string hora);
     
     //fim dos métodos
 };

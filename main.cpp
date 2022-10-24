@@ -132,6 +132,19 @@ int main()
 
                 c.imprimirlistadepacientes(cpfpaciente);
             break;
+            case 7:
+            cout<<"Digite o CPF do paciente"<<endl;
+            cin>>cpfpaciente;
+
+            cout<<"Digite o CRM do médico"<<endl;
+            cin>>CRM;
+
+            cout<<"Digite a hora da consulta"<<endl;
+            cin>>horaconsulta;
+
+            c.pesquisaconsulta(cpfpaciente,CRM,horaconsulta);
+
+            break;
             case 8:
                 cout<<"Digite o CRM do médico"<<endl;
                 cin>>crmremover;

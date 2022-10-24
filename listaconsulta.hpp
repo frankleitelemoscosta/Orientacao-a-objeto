@@ -19,7 +19,7 @@ public:
     bool remover(int cpfpaciente);
     void mostrartodosositens();
 
-    
+    void procuradaconsulta(int cpf, string hora);
 
 //fim das atribuições
 };

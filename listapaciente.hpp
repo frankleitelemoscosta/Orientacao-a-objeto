@@ -13,6 +13,7 @@ private:
     Paciente *cabeca;
     Paciente *cauda;
     char resultado;
+    int numerodepacientes;
 //fim dos atributos
 public:
 
@@ -22,13 +23,16 @@ public:
     bool remover(string nome);
     bool vazia();
     void mostrarpaciente(int cpf);
-    void tamanho_da_lista();
 
     void pesquisarcpf(int cpf);
 
     char getresultado();
 
     void cadastrodadatadaultimaconsulta(int cpf,int dia, int mes, int ano);
+
+    int getnumerodepacientes();
+
+    void mostrarnome(int cpf);
 
 //fim dos métodos
 };

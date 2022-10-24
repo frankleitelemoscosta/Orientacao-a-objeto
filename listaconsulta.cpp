@@ -104,5 +104,20 @@ bool Listaconsulta::remover(int cpfpaciente)
     }
 }
 
+void Listaconsulta::procuradaconsulta(int cpf, string hora)
+{
+    Consulta *corredor = new Consulta();
+    corredor = cabeca;
+
+    while(corredor)
+    {
+        if(corredor->getcpfpaciente()==cpf && corredor->gethora()==hora)
+        {
+            cout<<"Na data: "<<corredor->getdata()<<endl;
+            cout<<"As: "<<corredor->gethora()<<endl;
+        }
+        corredor = corredor->obterproximo();
+    }
+}
 
 //fim do código
