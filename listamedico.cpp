@@ -158,4 +158,26 @@ void Listamedico::remover(int crmremover)
     }
 }
 
+void Listamedico::pesquisarcrm(int CRM)
+{
+    Medico *corredor = new Medico();
+    corredor = cabeca;
+
+    this->resultado = 'F';
+
+    while(corredor)
+    {
+        if(corredor->getcrm()==CRM)
+        {
+            this->resultado = 'V';
+        }
+        corredor = corredor->obterprox();
+    }
+}
+
+char Listamedico::getresultado()
+{
+    return this->resultado;
+}
+
 //fim do código

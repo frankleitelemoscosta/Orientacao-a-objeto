@@ -1,6 +1,6 @@
 # PROJETO-DO-CONSULTÓRIO-AUTOMATIZADO
 
-# INTRODUÇÃO
+## INTRODUÇÃO
 
     Esse projeto tem por objetivo apresentar o gerenciamento de um consultório médico.
     Nossa atual realidade apresenta um auto nível de desenvolvimento técnico e tecnologico, e
@@ -13,7 +13,7 @@
     consultório médico, detalhando minhas decisões de implementação, baseadas no diagrama de classe 
     que meu orientador Eduardo Habib forneceu para que esse projeto fosse desenvolvido.
 
-# DECISÕES DE IMPLEMENTAÇÃO E ATUALIZAÇÃO DO DIAGRAMA DE CLASSES
+## DECISÕES DE IMPLEMENTAÇÃO E ATUALIZAÇÃO DO DIAGRAMA DE CLASSES
 
         A primeira decisão de implementação foi a de criar um menu, onde 
     o usuário pudesse acessar todas as funcionalidades do programa, como mostra 
@@ -32,14 +32,18 @@
     passar por esta classe, sendo assim ela teria de ser a primeira a ser implementada
     após o menu.
 
-# CASOS DE TESTE
+        Depois da implementação da classe consultório decidi implementar a classe médico
+    para que fosse possíve o cadastro de um médico no sistema, possibilitando ao usuário 
+    do sistema inserir, listar e remover um médico do programa.
+
+## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
     para que comprovasse se o menu estava funcionando sem nenhum erro, porem observe
     que nesse caso as funcionalidade do menu ainda não estavam implementadas, porem era
     possível escolher uma opção mesmo que ela não proporcionace algum resultado definitivo.
 
-# RESULTADOS DO PRIMEIRO CASO
+### RESULTADOS DO PRIMEIRO CASO
 
 ![primeiroteste](https://user-images.githubusercontent.com/107070061/197371828-3d6ef9fb-ee2d-4477-a616-318eeea9b82e.png)
 
@@ -52,7 +56,7 @@
     a classe onde estaria informações pessoais como nome, cpf, endereço seria uma classe compar-
     tilhada com outras como a classe paciente, que tambem pode ter as mesmas catacterísticas.
 
-# RESULTADOS DO SEGUNDO CASO DE TESTE
+### RESULTADOS DO SEGUNDO CASO DE TESTE
 
         Em uma primeira tentativa ocorreu um pequeno erro, devido a introdução 
     de um construtor vazio em uma classe e a não declaração do mesmo no arquivo

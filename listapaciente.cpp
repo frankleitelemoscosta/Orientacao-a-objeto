@@ -1,5 +1,7 @@
 //inicio das atribuições do código
 #include"listapaciente.hpp"
+#include <sstream>  // for string streams
+#include <string> 
 //fim das atribuições
 
 Listapaciente::Listapaciente()
@@ -153,4 +155,61 @@ bool Listapaciente::remover(string nome)
     }
 }
 
+void Listapaciente::pesquisarcpf(int cpf)
+{
+    Paciente *corredor = new Paciente();
+    corredor = cabeca;
+
+    this->resultado = 'F';
+
+    while(corredor)
+    {
+        if(corredor->getcpf()==cpf)
+        {
+            this->resultado = 'V';
+        }
+
+        corredor = corredor->obterproximo();
+    }
+
+}
+
+char Listapaciente::getresultado()
+{
+    return this->resultado;
+}
+
+void Listapaciente::cadastrodadatadaultimaconsulta(int cpf,int dia,int mes, int ano)
+{
+
+    ostringstream str1,str2,str3;
+
+    str1 << dia;
+    str2 << mes;
+    str3 << ano;
+
+    string geek = str1.str();
+    string geek2 = str2.str();
+    string geek3 = str3.str();
+
+
+    string data;
+
+    data = geek + "/" + geek2 + "/" + geek3 ;
+
+    cout<<data<<endl;
+
+    Paciente *corredor = new Paciente();
+    corredor = cabeca;
+
+    while(corredor)
+    {
+        if(corredor->getcpf()==cpf)
+        {
+            corredor->setdataultimaconsulta(data);
+        }
+        corredor = corredor->obterproximo();
+    }
+
+}
 //fim do código

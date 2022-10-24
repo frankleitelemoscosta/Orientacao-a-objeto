@@ -19,6 +19,8 @@ public:
     bool remover(int cpfpaciente);
     void mostrartodosositens();
 
+    
+
 //fim das atribuições
 };
 

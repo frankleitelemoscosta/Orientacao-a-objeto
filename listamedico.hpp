@@ -11,6 +11,7 @@ class Listamedico{
 private:
     Medico *cabeca;
     Medico *cauda;
+    char resultado;
 public:
 
     Listamedico();//construtor
@@ -24,6 +25,10 @@ public:
     void mostrartodosositens();
 
     void remover(int remover);
+
+    void pesquisarcrm(int CRM);
+
+    char getresultado();
 
     //fim dos métodos
 };

@@ -24,7 +24,20 @@ bool Consultorio::removermedico(int crmremover)
 
 void Consultorio::cadastrarconsulta(string hora, int cpfpaciente, int CRMmedico,int dia, int mes, int ano)
 {
-    v.inserir_na_lista(cpfpaciente,CRMmedico,hora,dia,mes,ano);
+    l.pesquisarcrm(CRMmedico);
+    p.pesquisarcpf(cpfpaciente);
+    
+    if(l.getresultado()=='V' && p.getresultado()=='V')
+    {
+
+        v.inserir_na_lista(cpfpaciente,CRMmedico,hora,dia,mes,ano);
+        p.cadastrodadatadaultimaconsulta(cpfpaciente,dia,mes,ano);
+
+    }else if(l.getresultado()=='F' || p.getresultado()=='F')
+    {
+        cout<<"Ou esse médico não trabalha aqui, ou esse paciente\nnão foi cadastrado, verifique no sistema e refaça o cadastro"<<endl;
+        return;
+    }
 }
 
 void Consultorio::imprimirconsultas()
