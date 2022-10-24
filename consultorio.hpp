@@ -32,10 +32,10 @@ public:
     void cadastrarconsulta(string hora, int cpfpaciente, int CRMmedico,int dia, int mes, int ano);
     bool removerconsulta(int cpfpaciente);
 
-    void imprimirlistadepacientes();
+    void imprimirlistadepacientes(int cpf);
     void imprimirconsultas();
     void imprimirconsultasdomedico();
-    void imprimirlistademedicos();
+    void imprimirlistademedicos(int crm);
     void numerodepacientes();
     
     //fim dos métodos

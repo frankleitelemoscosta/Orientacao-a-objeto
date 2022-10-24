@@ -12,9 +12,9 @@ void Consultorio::cadastrarmedico(int crm, string especialidade,string nomedomed
     l.inserir_no_inicio(crm,especialidade,nomedomedico,cpfdomedico,enderecodomedico,identidadedomedico,sexo,telefonedomedico);
 }
 
-void Consultorio::imprimirlistademedicos()
+void Consultorio::imprimirlistademedicos(int crm)
 {
-    l.mostrartodosositens();
+    l.mostrarositens(crm);
 }
 
 bool Consultorio::removermedico(int crmremover)
@@ -56,9 +56,9 @@ void Consultorio::cadastrarpaciente(string relato,string medicacao,int cpf,strin
     numerodepacientes();
 }
 
-void Consultorio::imprimirlistadepacientes()
+void Consultorio::imprimirlistadepacientes(int cpf)
 {
-    p.mostrartodos();
+    p.mostrarpaciente(cpf);
 }
 
 void Consultorio::numerodepacientes()

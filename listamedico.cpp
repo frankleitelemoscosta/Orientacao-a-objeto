@@ -83,23 +83,25 @@ void Listamedico::inserir_no_inicio(int crm,string especialidade,string nomedome
     cabeca->settelefone(telefonedomedico);
 }
 
-void Listamedico::mostrartodosositens()
+void Listamedico::mostrarositens(int crm)
 {
     Medico *c = new Medico();
     c = cabeca;
 
     while(c)
     {
-        cout<<"-----------------------------------"<<endl;
-        cout<<"Nome do Médico: "<<c->getnome()<<endl;
-        cout<<"CPF do médico: "<<c->getcpf()<<endl;
-        cout<<"Identidade do médico: "<<c->getidentidade()<<endl;
-        cout<<"Endereço do médico: "<<c->getendereco()<<endl;
-        cout<<"Telefone: "<<c->gettelefone()<<endl;
-        cout<<"CRM: "<<c->getcrm()<<endl;
-        cout<<"Especialidade do Médico: "<<c->getespecialidade()<<endl;
-        cout<<"-----------------------------------"<<endl;
-
+        if(c->getcrm()==crm)
+        {
+            cout<<"-----------------------------------"<<endl;
+            cout<<"Nome do Médico: "<<c->getnome()<<endl;
+            cout<<"CPF do médico: "<<c->getcpf()<<endl;
+            cout<<"Identidade do médico: "<<c->getidentidade()<<endl;
+            cout<<"Endereço do médico: "<<c->getendereco()<<endl;
+            cout<<"Telefone: "<<c->gettelefone()<<endl;
+            cout<<"CRM: "<<c->getcrm()<<endl;
+            cout<<"Especialidade do Médico: "<<c->getespecialidade()<<endl;
+            cout<<"-----------------------------------"<<endl;
+        }
         c = c->obterprox();
     }
 }

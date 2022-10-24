@@ -118,13 +118,19 @@ int main()
 
             break;
             case 4:
-                c.imprimirlistademedicos();
+                cout<<"Digite o CRM do médico que deseja saber os dados"<<endl;
+                cin>>CRM;
+
+                c.imprimirlistademedicos(CRM);
             break;
             case 5:
                 c.imprimirconsultas();
             break;
             case 6:
-                c.imprimirlistadepacientes();
+                cout<<"Digite o CPF do paciente, para encontra-lo"<<endl;
+                cin>>cpfpaciente;
+
+                c.imprimirlistadepacientes(cpfpaciente);
             break;
             case 8:
                 cout<<"Digite o CRM do médico"<<endl;

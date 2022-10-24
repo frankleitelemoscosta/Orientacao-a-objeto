@@ -22,7 +22,7 @@ public:
 
     void inserir_no_final();
 
-    void mostrartodosositens();
+    void mostrarositens(int crm);
 
     void remover(int remover);
 

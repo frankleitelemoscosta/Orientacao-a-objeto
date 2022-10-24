@@ -21,7 +21,7 @@ public:
     void inserir_na_lista(int cpf, string nome, char sexo,string endereco,string telefone,string identidade);
     bool remover(string nome);
     bool vazia();
-    void mostrartodos();
+    void mostrarpaciente(int cpf);
     void tamanho_da_lista();
 
     void pesquisarcpf(int cpf);

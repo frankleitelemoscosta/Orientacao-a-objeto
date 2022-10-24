@@ -69,22 +69,25 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
     cabeca->setidentidade(identidade);
 }
 
-void Listapaciente::mostrartodos()
+void Listapaciente::mostrarpaciente(int cpf)
 {
     Paciente *c = new Paciente();
     c = cabeca;
 
     while(c)
     {
-        cout<<"------------------------------------------------"<<endl;
-        cout<<"Nome do paciente: "<<c->getnome()<<endl;
-        cout<<"CPF: "<<c->getcpf()<<endl;
-        cout<<"Se é benina(F) ou benino(M): "<<c->getsexo()<<endl;
-        cout<<"Endereço do paciente: "<<c->getendereco()<<endl;
-        cout<<"Telefone do paciente: "<<c->gettelefone()<<endl;
-        cout<<"Identidade do paciente: "<<c->getidentidade()<<endl;
-        cout<<"Data da ultima consulta do infeliz: "<<c->getdataultimaconsulta()<<endl;
-        cout<<"------------------------------------------------"<<endl;
+        if(c->getcpf()==cpf)
+        {
+            cout<<"------------------------------------------------"<<endl;
+            cout<<"Nome do paciente: "<<c->getnome()<<endl;
+            cout<<"CPF: "<<c->getcpf()<<endl;
+            cout<<"Se é benina(F) ou benino(M): "<<c->getsexo()<<endl;
+            cout<<"Endereço do paciente: "<<c->getendereco()<<endl;
+            cout<<"Telefone do paciente: "<<c->gettelefone()<<endl;
+            cout<<"Identidade do paciente: "<<c->getidentidade()<<endl;
+            cout<<"Data da ultima consulta do infeliz: "<<c->getdataultimaconsulta()<<endl;
+            cout<<"------------------------------------------------"<<endl;
+        }
         c = c->obterproximo();
     }
 }
