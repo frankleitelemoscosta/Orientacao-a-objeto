@@ -23,7 +23,7 @@ public:
 
     Consultorio();
 
-    void cadastrarpaciente(string relato, string datadaultimaconsulta,string medicacao,int cpf,string nome, string endereco, string telefone, char sexo,string identidade);
+    void cadastrarpaciente(string relato,string medicacao,int cpf,string nome, string endereco, string telefone, char sexo,string identidade);
     bool removerpaciente(string nomedopaciente);
 
     void cadastrarmedico(int crm,string especialidade,string nomedomedico, int cpfdomedico, string enderecodomedico, string identidadedomedico,char sexo,string telefonedomedico);

@@ -93,7 +93,7 @@ int main()
             cout<<"Digite a identidade do paciente"<<endl;
             getline(cin,identidadedopaciente);
 
-            c.cadastrarpaciente(relato,dataultimaconsulta,medicacao,cpfpaciente,nomepaciente,enderecodopaciente,telefonepaciente,sexo,identidadedopaciente);
+            c.cadastrarpaciente(relato,medicacao,cpfpaciente,nomepaciente,enderecodopaciente,telefonepaciente,sexo,identidadedopaciente);
 
             break;
             case 3:

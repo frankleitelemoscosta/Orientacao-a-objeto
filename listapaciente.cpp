@@ -83,6 +83,7 @@ void Listapaciente::mostrartodos()
         cout<<"Endereço do paciente: "<<c->getendereco()<<endl;
         cout<<"Telefone do paciente: "<<c->gettelefone()<<endl;
         cout<<"Identidade do paciente: "<<c->getidentidade()<<endl;
+        cout<<"Data da ultima consulta do infeliz: "<<c->getdataultimaconsulta()<<endl;
         cout<<"------------------------------------------------"<<endl;
         c = c->obterproximo();
     }
@@ -188,14 +189,14 @@ void Listapaciente::cadastrodadatadaultimaconsulta(int cpf,int dia,int mes, int 
     str2 << mes;
     str3 << ano;
 
-    string geek = str1.str();
-    string geek2 = str2.str();
-    string geek3 = str3.str();
+    string day = str1.str();
+    string month = str2.str();
+    string year = str3.str();
 
 
     string data;
 
-    data = geek + "/" + geek2 + "/" + geek3 ;
+    data = day + "/" + month + "/" + year ;
 
     cout<<data<<endl;
 
