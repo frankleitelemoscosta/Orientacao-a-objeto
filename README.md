@@ -36,6 +36,12 @@
     para que fosse possíve o cadastro de um médico no sistema, possibilitando ao usuário 
     do sistema inserir, listar e remover um médico do programa.
 
+        Com a implementação da lista de médicos decidi implementar uma classe que iden-
+    ficasse melhor o médico do que apenas a sua especialidade e CRM, e que 
+    posteriormente seria usada em outras listas como a de pacientes por exemplo, isso
+    foi feito utilizando herança.
+
+
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
@@ -80,6 +86,8 @@
     a lista que salva as informações de um médico é duplamente encadeada, assim a remoção
     de um nó é uma simples questão de redirecionar ponteiros internos de um nó corretamente.
 
+###RESULTADO DO TERCEIRO CASO DE TESTE
+
         Em uma primeira tentativa houve um erro, visto que não tinha cido tratado o caso 
     para remoção de apenas um elemento na lista de medicos, o video a seguir mostra isso:
 
@@ -90,6 +98,19 @@ https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981
     ção, foi obtido exito como mostra o curto video a seguir:
 
 https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
+
+
+        Foi feito a implementação de uma classe para dar nome e pegar outras informações
+    do médico, foi feito uma primeira tentativa, e foi encontrado um erro de inserção de dados,
+    como mostrar a imagem a seguir:
+
+###RESULTADO DO QUARTO CASO DE TESTE
+
+![Captura de tela de 2022-10-25 13-13-25](https://user-images.githubusercontent.com/107070061/197837280-e621f41a-218a-4295-b8c4-0ff52b59d0b4.png)
+
+        Como mostra a imagem o programa não permitia ao usuário inserir, foi adicionado 
+    a função cin.ingnore(), que obriga o computador retirar o que estava no buffer, e 
+    o resultado foi:
 
 
         
