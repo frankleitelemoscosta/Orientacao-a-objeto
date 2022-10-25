@@ -86,3 +86,12 @@
 https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981-820e-f970b0fae0d7.mp4
 
 
+        Em uma segunda tentativa após alterações no código da lista onde se localizava a função de remo-
+    ção, foi obtido exito como mostra o curto video a seguir:
+
+https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
+
+
+        
+
+
