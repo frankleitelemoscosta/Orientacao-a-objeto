@@ -61,7 +61,7 @@ void Listapaciente::inserir_na_lista(int cpfpaciente,string nome, char sexo, str
         cabeca->setanterior(nullptr);
     }
 
-    this->numerodepacientes++;
+    this->numerodepacientes = this->numerodepacientes++;
     cabeca->setcpf(cpfpaciente);
     cabeca->setnome(nome);
     cabeca->setsexo(sexo);
@@ -141,7 +141,7 @@ bool Listapaciente::remover(string nome)
             }
             cont1=0;
             cont2=0;
-            this->numerodepacientes--;
+            this->numerodepacientes = this->numerodepacientes--;
         }
         c = c->obterproximo();
     }
