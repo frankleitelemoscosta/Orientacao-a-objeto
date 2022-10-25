@@ -112,6 +112,9 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
     a função cin.ingnore(), que obriga o computador retirar o que estava no buffer, e 
     o resultado foi:
 
+![correção de erro](https://user-images.githubusercontent.com/107070061/197846413-544eee7c-ac55-47d3-ba44-f710bee8b631.png)
+
+
 
         
 
