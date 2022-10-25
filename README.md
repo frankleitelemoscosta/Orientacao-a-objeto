@@ -76,4 +76,7 @@
         Essa segunda imagem mostra o resultado da impressão das informações dos médicos cadastrados,
     afirmando o sucesso na implementação da classe medico e sua lista.
 
+        Após estes testes foi implementado por mim a remoção de um médico do sistema
+    a lista que salva as informações de um médico é duplamente encadeada, assim a remoção
+    de um nó é uma simples questão de redirecionar ponteiros internos de um nó corretamente.
 
