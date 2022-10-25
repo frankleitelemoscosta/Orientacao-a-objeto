@@ -80,3 +80,9 @@
     a lista que salva as informações de um médico é duplamente encadeada, assim a remoção
     de um nó é uma simples questão de redirecionar ponteiros internos de um nó corretamente.
 
+        Em uma primeira tentativa houve um erro, visto que não tinha cido tratado o caso 
+    para remoção de apenas um elemento na lista de medicos, o video a seguir mostra isso:
+
+https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981-820e-f970b0fae0d7.mp4
+
+
