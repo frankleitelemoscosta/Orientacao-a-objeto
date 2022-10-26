@@ -16,13 +16,10 @@
 ## DECISÕES DE IMPLEMENTAÇÃO E ATUALIZAÇÃO DO DIAGRAMA DE CLASSES
 
         A primeira decisão de implementação foi a de criar um menu, onde 
-    o usuário pudesse acessar todas as funcionalidades do programa, como mostra 
-    os prints dos terminais a seguir:
+    o usuário pudesse acessar todas as funcionalidades do programa.
 
-![Captura de tela de 2022-10-22 21-26-14](https://user-images.githubusercontent.com/107070061/197369877-de221b95-4900-4b0a-9fda-7db0b01df488.png)
-
-    Esta primeira imagem demonstra o menu, implementado em C++, alem das opções 
-    para o usuário usar alguma funcionalidade foi adicionado uma opção para limpar a tela do programa
+        No meu menu, implementado em C++, alem das opções para o usuário usar alguma
+    funcionalidade foi adicionado uma opção para limpar a tela do programa
     com o intuito de não poluir visualmente a interface para o usuário.
 
         Após a implementação do menu decidi que era necessário iniciar o desenvolvimento
@@ -96,7 +93,7 @@
     a lista que salva as informações de um médico é duplamente encadeada, assim a remoção
     de um nó é uma simples questão de redirecionar ponteiros internos de um nó corretamente.
 
-###RESULTADO DO TERCEIRO CASO DE TESTE
+### RESULTADO DO TERCEIRO CASO DE TESTE
 
         Em uma primeira tentativa houve um erro, visto que não tinha cido tratado o caso 
     para remoção de apenas um elemento na lista de medicos, o video a seguir mostra isso:
@@ -109,7 +106,7 @@ https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981
 
 https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
 
-###RESULTADO DO QUARTO CASO DE TESTE
+### RESULTADO DO QUARTO CASO DE TESTE
 
         Foi feito a implementação de uma classe para dar nome e pegar outras informações
     do médico, foi feito uma primeira tentativa, e foi encontrado um erro de inserção de dados,
@@ -127,7 +124,7 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
     um endereço para o médico o que não era possível antes da devida
     correção.
 
-###RESULTADO DO QUINTO CASO DE TESTE
+### RESULTADO DO QUINTO CASO DE TESTE
 
         Esse caso de teste se trata da correção de um erro que não havia acontecido
     porem em dialogo com colegas de faculdade percebi que se tratava de um caso a 
@@ -135,5 +132,8 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
     erro seria necessário fazer um tratamento diferente do apenas remover convencional
     implementei no projeto, em uma primeira tentativa obtive os seguintes resultados:
         
+
+https://user-images.githubusercontent.com/107070061/197918379-fd4c3bd8-bd8a-43f7-bc52-ea6e98374b8c.mp4
+
 
 
