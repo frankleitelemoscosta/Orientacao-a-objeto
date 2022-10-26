@@ -41,6 +41,16 @@
     posteriormente seria usada em outras listas como a de pacientes por exemplo, isso
     foi feito utilizando herança.
 
+        Neste ponto de desenvolvimento do projeto me deparei com a primera inserção com-
+    pleta realizada, isto é: se faz até aqui possível cadastrar um médico de maneira 
+    integra, porem ainda me deparei com um possível problema quando em dialogo com meus
+    companheiros de faculdade, e se tivesse apenas um medico na lista?, se não fosse 
+    tratado de maneira particular na parte do código onde seria efetuado a remoção 
+    me traria potenciais problemas, no caso de falha de segmentação, tornando 
+    meu software potencialmente mal elaborado, com isso decidi colocar um caso 
+    a parte no momento da remoção, o qual possibilitou ao meu programa lidar
+    com essa situação de maneira adequa. 
+
 
 ## CASOS DE TESTE
 
@@ -99,12 +109,11 @@ https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981
 
 https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
 
+###RESULTADO DO QUARTO CASO DE TESTE
 
         Foi feito a implementação de uma classe para dar nome e pegar outras informações
     do médico, foi feito uma primeira tentativa, e foi encontrado um erro de inserção de dados,
     como mostrar a imagem a seguir:
-
-###RESULTADO DO QUARTO CASO DE TESTE
 
 ![Captura de tela de 2022-10-25 13-13-25](https://user-images.githubusercontent.com/107070061/197837280-e621f41a-218a-4295-b8c4-0ff52b59d0b4.png)
 
@@ -114,8 +123,17 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
 
 ![correção de erro](https://user-images.githubusercontent.com/107070061/197846413-544eee7c-ac55-47d3-ba44-f710bee8b631.png)
 
+        È evidente que nesta tentativa foi possivel cadastrar
+    um endereço para o médico o que não era possível antes da devida
+    correção.
 
+###RESULTADO DO QUINTO CASO DE TESTE
 
+        Esse caso de teste se trata da correção de um erro que não havia acontecido
+    porem em dialogo com colegas de faculdade percebi que se tratava de um caso a 
+    ser tratado, quando se tem apenas um elemento na lista, para que não desse 
+    erro seria necessário fazer um tratamento diferente do apenas remover convencional
+    implementei no projeto, em uma primeira tentativa obtive os seguintes resultados:
         
 
 
