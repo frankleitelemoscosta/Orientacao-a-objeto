@@ -136,4 +136,7 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
 https://user-images.githubusercontent.com/107070061/197918379-fd4c3bd8-bd8a-43f7-bc52-ea6e98374b8c.mp4
 
 
-
+        É facil notar que no inicio deste video havia um médico cadastrado na lista
+    acessando a opção 8 de removo o medico e após entro novamente na opção 4, 
+    mostrando a lista de médicos vazia, confirmando o exito da tentativa de remover
+    um elemento da lista quanto existe apenas um elemento. 
