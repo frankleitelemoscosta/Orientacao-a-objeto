@@ -16,7 +16,11 @@
 ## DECISÕES DE IMPLEMENTAÇÃO E ATUALIZAÇÃO DO DIAGRAMA DE CLASSES
 
         A primeira decisão de implementação foi a de criar um menu, onde 
-    o usuário pudesse acessar todas as funcionalidades do programa.
+    o usuário pudesse acessar todas as funcionalidades do programa, e desde já 
+    tambem fiz uma primeira modelagem do software para que pudesse ser um norte
+    para criação do programa, tal primeira versão é esta que se segue:
+
+![PRIMEIRA VERÇÃO DO DIAGRAMA DE CLASSE](https://user-images.githubusercontent.com/107070061/198628281-0f12d17c-6e7c-4962-aa45-c37b44f01ff0.png)
 
         No meu menu, implementado em C++, alem das opções para o usuário usar alguma
     funcionalidade foi adicionado uma opção para limpar a tela do programa
