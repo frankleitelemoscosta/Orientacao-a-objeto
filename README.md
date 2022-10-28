@@ -50,6 +50,10 @@
 
         Com esse potencial problema resolvido tomei a decisão de permiti o cadastro
     de uma consulta no sistema, e com isso o uso de mais uma funcionalidade do sistema,
+    em primeira mão apenas foi implementado a classe consulta com hora da cosulta, cpf
+    e CRM do médico, outra característica importante de uma consulta seria a data a qual
+    a mesma acontecerá, por exemplo. Com isso tomei a decisão de implementar a classe data
+    trazendo a funcionalidade de datar uma consulta.
     
 
 
@@ -157,3 +161,7 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
 
         Como mostra o curto video a implementação foi bem sucedida, sem casos de erro
     porem observe que tal classe ainda não estava armazenando a data da consulta.
+
+### RESULTADO DO SÉTIMO CASO DE TESTE
+
+        
