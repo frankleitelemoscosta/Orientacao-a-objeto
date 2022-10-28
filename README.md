@@ -144,3 +144,16 @@ https://user-images.githubusercontent.com/107070061/197918379-fd4c3bd8-bd8a-43f7
     acessando a opção 8 de removo o medico e após entro novamente na opção 4, 
     mostrando a lista de médicos vazia, confirmando o exito da tentativa de remover
     um elemento da lista quanto existe apenas um elemento. 
+
+
+### RESULTADO DO SEXTO CASO DE TESTE
+
+        Esse caso de teste se trata da implementação da classe consulta e 
+    de sua lista, visto que podemos ter diversas consultas em um mesmo consultorio,
+    os resultado seguem no video a seguir:
+
+
+https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51-b9ce-c9980a518a8b.mp4
+
+        Como mostra o curto video a implementação foi bem sucedida, sem casos de erro
+    porem observe que tal classe ainda não estava armazenando a data da consulta.
