@@ -54,6 +54,11 @@
     e CRM do médico, outra característica importante de uma consulta seria a data a qual
     a mesma acontecerá, por exemplo. Com isso tomei a decisão de implementar a classe data
     trazendo a funcionalidade de datar uma consulta.
+
+        Será mostrado nos casos de teste que mesmo com lixo de memoria na impressão da 
+    data da consulta decidi seguir em diante com o projeto por hora, e tratar desse 
+    problema com o projeto um pouco mais a frente, para que eu consiguisse ganhar 
+    tempo acelerando o processo de desenvolvimento do software.
     
 
 
@@ -178,4 +183,16 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
         È facil perceber que esta fase do projeto teve bons resultados de primeira mão, 
     porem como o segundo print mostra junto com as informações da consulta veio um lixo
     de memória, logo após a impressão da data da consulta.
+
+### RESULTADO DO OITAVO CASO DE TESTE
+
+        Agora implementei mais uma lista que se tratava da inserção de um paciente no sistema,
+    porem em uma primeira tentativa obtive um erro, que se tratava da não implementação de um
+    dos métodos, como mostra os prints do terminal:
+
+![ERRO da implementação da listapaciente](https://user-images.githubusercontent.com/107070061/198587942-68ccb5a2-f824-4220-816b-376374e35111.png)
+
+        Na implementação da classe paciente, me passou despercebido o desenvolvimento do método
+    que retornava um ponteiro que apontava para o nó anterior da lista, visto que usei uma lista
+    duplamente encadeada.
     
