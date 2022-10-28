@@ -58,7 +58,9 @@
         Será mostrado nos casos de teste que mesmo com lixo de memoria na impressão da 
     data da consulta decidi seguir em diante com o projeto por hora, e tratar desse 
     problema com o projeto um pouco mais a frente, para que eu consiguisse ganhar 
-    tempo acelerando o processo de desenvolvimento do software.
+    tempo acelerando o processo de desenvolvimento do software. Então decidi partir 
+    para implementação da classe paciente, para que possibilitasse ao usuário 
+    inserir pacientes no sistema.
     
 
 
