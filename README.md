@@ -120,7 +120,7 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
     do médico, foi feito uma primeira tentativa, e foi encontrado um erro de inserção de dados,
     como mostrar a imagem a seguir:
 
-![Captura de tela de 2022-10-25 13-13-25](https://user-images.githubusercontent.com/107070061/197837280-e621f41a-218a-4295-b8c4-0ff52b59d0b4.png)
+![aprimoramento da coleta de informações do medico](https://user-images.githubusercontent.com/107070061/197837280-e621f41a-218a-4295-b8c4-0ff52b59d0b4.png)
 
         Como mostra a imagem o programa não permitia ao usuário inserir, foi adicionado 
     a função cin.ingnore(), que obriga o computador retirar o que estava no buffer, e 
@@ -164,4 +164,18 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
 
 ### RESULTADO DO SÉTIMO CASO DE TESTE
 
-        
+       Como já foi dito por mim por aqui, que em primeira mão foi criado a classe consulta
+    sem suas características principais adicionadas, por isso neste caso de teste será 
+    mostrado a implementação de uma classe de codinome data para realizar esse função 
+    tão importante no processo de registro de uma consulta de maneira automatizada,
+    na primeira tentativa obtive estes resultados:
+
+![implementação da classe data](https://user-images.githubusercontent.com/107070061/198577284-ab2e9d4b-2f92-480d-9db3-570ff623acc3.png)
+
+![introdução da classe data](https://user-images.githubusercontent.com/107070061/198577376-6d2ec4c0-1ca8-437f-8f49-138e44a24f21.png)
+
+
+        È facil perceber que esta fase do projeto teve bons resultados de primeira mão, 
+    porem como o segundo print mostra junto com as informações da consulta veio um lixo
+    de memória, logo após a impressão da data da consulta.
+    
