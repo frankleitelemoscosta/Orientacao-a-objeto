@@ -48,6 +48,10 @@
     a parte no momento da remoção, o qual possibilitou ao meu programa lidar
     com essa situação de maneira adequa. 
 
+        Com esse potencial problema resolvido tomei a decisão de permiti o cadastro
+    de uma consulta no sistema, e com isso o uso de mais uma funcionalidade do sistema,
+    
+
 
 ## CASOS DE TESTE
 
