@@ -165,9 +165,15 @@ int main()
 
                 c.removerconsulta(cpfpaciente);
             break;
+            case 11:
+                cout<<"Saindo...."<<endl;
+            break;
             case 12:
                 system("clear");
                 //system("wls");// se o sistema operacional for windowns basta retirar o comentario desta linha de código
+            break;
+            default:
+                cout<<"O Negão são apenas 12 opções, volte as aulas de porturguês se você não percebeu"<<endl;
             break;
         }
 

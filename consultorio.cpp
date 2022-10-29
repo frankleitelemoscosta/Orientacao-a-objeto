@@ -63,7 +63,7 @@ void Consultorio::imprimirlistadepacientes(int cpf)
 
 void Consultorio::numerodepacientes()
 {
-    p.getnumerodepacientes();
+  cout<<"Numero de pacientes: "<<p.getnumerodepacientes()<<endl;
 }
 
 bool Consultorio::removerpaciente(string nomedopaciente)
