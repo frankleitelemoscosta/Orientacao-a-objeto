@@ -75,7 +75,13 @@
 
 ![Diagrama com listapaciente](https://user-images.githubusercontent.com/107070061/198823182-43a90c46-14b9-4540-adfa-697e9d0ebc3d.png)
 
-    
+        Com todas as listas que deveriam ser incluidas ao código ja prontas decidi
+    que deveria corrigir erros que ja vinha em versões anteriores, mas não me 
+    prejudicaram, como o erro do lixo apos a impressão da data, que apesar de
+    se tratar de lixo de memoria não significava um problema pois a data era 
+    impressa sem lixo, esse erro aparecia sem sobreescrever dado algum,simples-
+    mente aparecia.
+
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
@@ -209,4 +215,17 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
         Na implementação da classe paciente, me passou despercebido o desenvolvimento do método
     que retornava um ponteiro que apontava para o nó anterior da lista, visto que usei uma lista
     duplamente encadeada.
+
+### RESULTADO DO NONO CASO DE TESTE 
+
+        Este teste foi realizado para comprovar se o lixo de memoria tinha cido removido,
+    e o erro da não implementação do método que resgatava o ponteiro que aponta para um
+    nó antecessor na lista do paciente tinha cido resolvido, a imagem a seguir mostra o 
+    sucesso neste teste:
+
+![correção do erro de impressao da data](https://user-images.githubusercontent.com/107070061/198823780-bfdf9f42-587a-4db4-b6c2-6ff67982ebd9.png)
+
+        O erro do lixo de memoria acontecia pois no método onde era impresso a data que 
+    tinha cido coloca para retornar um valor e não se estava sendo retornando nada, so-
+    lucionei esse problema colocando o método para retornar o ano da data.
     
