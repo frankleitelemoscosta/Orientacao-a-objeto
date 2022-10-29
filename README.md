@@ -273,4 +273,7 @@ https://user-images.githubusercontent.com/107070061/198834436-fedefdc9-8610-4362
         O video mostra que quando ocorre o cadastro com dois cpfs iguais o software acaba
     por cadastrar em vez de impedir, esse erro ocorreu devido que deixei me passar despercebido
     que no momento de verificar era necessario fazer o software buscar os endereços seguintes
-    nos nós na lista
+    nos nós na lista, foi feita a correção e os resultados foram:
+
+https://user-images.githubusercontent.com/107070061/198835694-ccc6b807-f9d4-48e7-a342-1729561ea4c3.mp4
+
