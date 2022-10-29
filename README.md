@@ -86,7 +86,19 @@
     cido adicionado a função de remover um paciente ao programa, então resolvi
     tomar esse atitude e inserir essa funcionalidade ao sistema, logo após comecei 
     a tratar casos de cadastro duplicado como quando se inseri duas pessoas com
-    o mesmo nome.
+    o mesmo nome, ou ainda com o mesmo cpf.
+
+        Após isso ter cido feito, em conversa com a monitora da materia de programação
+    percebi que havia me passado despercebido que usei a composição invertida, sabendo
+    disso atualizei novamente o diagrama e adicionei o que ainda restava adicionar até
+    esta fase de desenvolvimento do projeto, como mostro a seguir:
+
+![diagrama atualizado](https://user-images.githubusercontent.com/107070061/198836471-7f3e55c5-0855-49ad-8f49-c1a37281c5eb.png)
+
+![diagrama atualizado composicao](https://user-images.githubusercontent.com/107070061/198836523-9661355c-9d57-4419-af42-f75840cba7cd.png)
+
+![diagrama uml composicao](https://user-images.githubusercontent.com/107070061/198836536-e386f076-8e69-47d3-b51c-91f20953d2ad.png)
+
 
 ## CASOS DE TESTE
 
