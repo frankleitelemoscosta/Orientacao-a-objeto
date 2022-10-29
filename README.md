@@ -99,6 +99,15 @@
 
 ![diagrama uml composicao](https://user-images.githubusercontent.com/107070061/198836536-e386f076-8e69-47d3-b51c-91f20953d2ad.png)
 
+        Em conversa com colegas de faculdade cheguei a conclusão que seria necessario
+    fazer com que o software procurasse o cpf na lista de pacientes, para que não ocorresse
+    de o programa pegar um cpf que não existe ou de uma pessoa que não se trata de um 
+    paciente verdadeiro, e com isso tive de adicionar um novo método tanto a lista de
+    medicos quanto a lista de pacientes que permitisse que fosse feito essa busca, com isso 
+    tive de atualizar o diagrama de classe, e apresento a seguir as mudanças:
+
+
+
 
 ## CASOS DE TESTE
 
@@ -288,4 +297,10 @@ https://user-images.githubusercontent.com/107070061/198834436-fedefdc9-8610-4362
     nos nós na lista, foi feita a correção e os resultados foram:
 
 https://user-images.githubusercontent.com/107070061/198835694-ccc6b807-f9d4-48e7-a342-1729561ea4c3.mp4
+
+### RESULTADO DO DECIMO TERCEIRO CASO DE TESTE E SUA ANÁLISE
+
+        Esse caso se trata do teste para averiguar se quando cadastrado uma consulta
+    vai ser cadastrado com um cpf de um paciente real e um medico que realmente trabalhe
+    naquele hospital, os resultado são mostrados a seguir:
 
