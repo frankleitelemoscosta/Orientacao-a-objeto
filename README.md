@@ -102,7 +102,7 @@
     a classe onde estaria informações pessoais como nome, cpf, endereço seria uma classe compar-
     tilhada com outras como a classe paciente, que tambem pode ter as mesmas catacterísticas.
 
-### RESULTADOS DO SEGUNDO CASO DE TESTE
+### RESULTADO DO SEGUNDO CASO DE TESTE E SUA ANÁLISE
 
         Em uma primeira tentativa ocorreu um pequeno erro, devido a introdução 
     de um construtor vazio em uma classe e a não declaração do mesmo no arquivo
@@ -126,7 +126,7 @@
     a lista que salva as informações de um médico é duplamente encadeada, assim a remoção
     de um nó é uma simples questão de redirecionar ponteiros internos de um nó corretamente.
 
-### RESULTADO DO TERCEIRO CASO DE TESTE
+### RESULTADO DO TERCEIRO CASO DE TESTE E SUA ANÁLISE
 
         Em uma primeira tentativa houve um erro, visto que não tinha cido tratado o caso 
     para remoção de apenas um elemento na lista de medicos, o video a seguir mostra isso:
@@ -139,7 +139,7 @@ https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981
 
 https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
 
-### RESULTADO DO QUARTO CASO DE TESTE
+### RESULTADO DO QUARTO CASO DE TESTE E SUA ANÁLISE
 
         Foi feito a implementação de uma classe para dar nome e pegar outras informações
     do médico, foi feito uma primeira tentativa, e foi encontrado um erro de inserção de dados,
@@ -157,7 +157,7 @@ https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0
     um endereço para o médico o que não era possível antes da devida
     correção.
 
-### RESULTADO DO QUINTO CASO DE TESTE
+### RESULTADO DO QUINTO CASO DE TESTE E SUA ANÁLISE
 
         Esse caso de teste se trata da correção de um erro que não havia acontecido
     porem em dialogo com colegas de faculdade percebi que se tratava de um caso a 
@@ -175,7 +175,7 @@ https://user-images.githubusercontent.com/107070061/197918379-fd4c3bd8-bd8a-43f7
     um elemento da lista quanto existe apenas um elemento. 
 
 
-### RESULTADO DO SEXTO CASO DE TESTE
+### RESULTADO DO SEXTO CASO DE TESTE E SUA ANÁLISE
 
         Esse caso de teste se trata da implementação da classe consulta e 
     de sua lista, visto que podemos ter diversas consultas em um mesmo consultorio,
@@ -187,7 +187,7 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
         Como mostra o curto video a implementação foi bem sucedida, sem casos de erro
     porem observe que tal classe ainda não estava armazenando a data da consulta.
 
-### RESULTADO DO SÉTIMO CASO DE TESTE
+### RESULTADO DO SETIMO CASO DE TESTE E SUA ANÁLISE
 
        Como já foi dito por mim por aqui, que em primeira mão foi criado a classe consulta
     sem suas características principais adicionadas, por isso neste caso de teste será 
@@ -204,7 +204,7 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
     porem como o segundo print mostra junto com as informações da consulta veio um lixo
     de memória, logo após a impressão da data da consulta.
 
-### RESULTADO DO OITAVO CASO DE TESTE
+### RESULTADO DO OITAVO CASO DE TESTE E SUA ANÁLISE
 
         Agora implementei mais uma lista que se tratava da inserção de um paciente no sistema,
     porem em uma primeira tentativa obtive um erro, que se tratava da não implementação de um
@@ -216,7 +216,7 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
     que retornava um ponteiro que apontava para o nó anterior da lista, visto que usei uma lista
     duplamente encadeada.
 
-### RESULTADO DO NONO CASO DE TESTE 
+### RESULTADO DO NONO CASO DE TESTE E SUA ANÁLISE
 
         Este teste foi realizado para comprovar se o lixo de memoria tinha cido removido,
     e o erro da não implementação do método que resgatava o ponteiro que aponta para um
