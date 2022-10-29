@@ -34,8 +34,11 @@
     após o menu.
 
         Depois da implementação da classe consultório decidi implementar a classe médico
-    para que fosse possíve o cadastro de um médico no sistema, possibilitando ao usuário 
-    do sistema inserir, listar e remover um médico do programa.
+    para que fosse possível o cadastro de um médico no sistema, possibilitando ao usuário 
+    do sistema inserir, listar e remover um médico do programa, e com isso em mente decidi
+    adicionar ao diagrama essa nova lista, como mostra o print:
+
+![diagrama com lista medico](https://user-images.githubusercontent.com/107070061/198822089-d76ee5b0-3cd0-4edc-b839-eeaf17da8174.png)
 
         Com a implementação da lista de médicos decidi implementar uma classe que iden-
     ficasse melhor o médico do que apenas a sua especialidade e CRM, e que 
@@ -54,20 +57,25 @@
 
         Com esse potencial problema resolvido tomei a decisão de permiti o cadastro
     de uma consulta no sistema, e com isso o uso de mais uma funcionalidade do sistema,
-    em primeira mão apenas foi implementado a classe consulta com hora da cosulta, cpf
-    e CRM do médico, outra característica importante de uma consulta seria a data a qual
-    a mesma acontecerá, por exemplo. Com isso tomei a decisão de implementar a classe data
-    trazendo a funcionalidade de datar uma consulta.
+    em primeira mão apenas foi implementado a classe consulta com sua lista a hora da 
+    cosulta, cpf e CRM do médico, outra característica importante de uma consulta 
+    seria a data a qual a mesma acontecerá, por exemplo. Com isso tomei a decisão 
+    de implementar a classe data trazendo a funcionalidade de datar uma consulta, 
+    como mostra o diagrama:
+
+![Diagrama com lista consulta](https://user-images.githubusercontent.com/107070061/198822446-a5576030-2294-4b94-b58b-f2be73b5fcd9.png)
 
         Será mostrado nos casos de teste que mesmo com lixo de memoria na impressão da 
     data da consulta decidi seguir em diante com o projeto por hora, e tratar desse 
     problema com o projeto um pouco mais a frente, para que eu consiguisse ganhar 
     tempo acelerando o processo de desenvolvimento do software. Então decidi partir 
     para implementação da classe paciente, para que possibilitasse ao usuário 
-    inserir pacientes no sistema.
+    inserir pacientes no sistema, resolvi que deviria modelar mais uma vez o diagrama
+    que ficou desta forma:
+
+![Diagrama com listapaciente](https://user-images.githubusercontent.com/107070061/198823182-43a90c46-14b9-4540-adfa-697e9d0ebc3d.png)
+
     
-
-
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
