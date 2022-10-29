@@ -228,4 +228,17 @@ https://user-images.githubusercontent.com/107070061/198507973-b904fdc3-0c09-4d51
         O erro do lixo de memoria acontecia pois no método onde era impresso a data que 
     tinha cido coloca para retornar um valor e não se estava sendo retornando nada, so-
     lucionei esse problema colocando o método para retornar o ano da data.
+
+### RESULTADO DO DECIMO CASO DE TESTE E SUA ANÁLISE
+
+        Aqui demonstro os resultados da implementação do remover na lista do paciente,
+    em primeiro teste obtive os seguintes resultados:
+
+
+https://user-images.githubusercontent.com/107070061/198828796-e5a3936b-3d48-4849-99e9-d3f460d78148.mp4
+
+        O que demonstro aqui é o cadastro de um paciente pela segunda opção do menu, logo
+    após mostro os componentes da lista de pacientes com a opção 6 do menu, e por fim com 
+    a opção 9 removo o paciente cadastrado da lista, antes de encerrar imprimo novamente 
+    os dados da lista para mostrar o exito na tentativa de remoção de um paciente.
     
