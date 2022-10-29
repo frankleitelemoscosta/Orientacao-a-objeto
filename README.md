@@ -82,6 +82,12 @@
     impressa sem lixo, esse erro aparecia sem sobreescrever dado algum,simples-
     mente aparecia.
 
+        Apesar de ja estar implementado no diagrama de classe ainda não havia
+    cido adicionado a função de remover um paciente ao programa, então resolvi
+    tomar esse atitude e inserir essa funcionalidade ao sistema, logo após comecei 
+    a tratar casos de cadastro duplicado como quando se inseri duas pessoas com
+    o mesmo nome
+
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
