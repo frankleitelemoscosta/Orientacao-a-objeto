@@ -102,7 +102,7 @@
     a classe onde estaria informações pessoais como nome, cpf, endereço seria uma classe compar-
     tilhada com outras como a classe paciente, que tambem pode ter as mesmas catacterísticas.
 
-### RESULTADO DO SEGUNDO CASO DE TESTE E SUA ANÁLISE
+### RESULTADO DO  CASO DE TESTE E SUA ANÁLISE
 
         Em uma primeira tentativa ocorreu um pequeno erro, devido a introdução 
     de um construtor vazio em uma classe e a não declaração do mesmo no arquivo
@@ -242,3 +242,16 @@ https://user-images.githubusercontent.com/107070061/198828796-e5a3936b-3d48-4849
     a opção 9 removo o paciente cadastrado da lista, antes de encerrar imprimo novamente 
     os dados da lista para mostrar o exito na tentativa de remoção de um paciente.
     
+### RESULTADO DO DECIMO PRIMEIRO CASO DE TESTE E SUA ANÁLISE
+
+        Aqui altero o código que para quando ocorresse o cadastro de um paciente
+    com o nome identico a outro cadastrado isso fosse identificado e pedido para o 
+    usuario colocar um sobrenome para diferenciar, como mostra o curto video:
+
+
+https://user-images.githubusercontent.com/107070061/198831410-7bd9de4e-9a6e-45f6-a34b-2c7c357f4321.mp4
+
+        È fácil perceber no video que quando se cadastra uma pessoa com nome identico
+    a uma ja cadastrada o software pede ao usuario para digitar um sobrenome, para que 
+    seja possível diferenciar desta pessoa já cadastrada, com isso confirmando o exito
+    na implementação.
