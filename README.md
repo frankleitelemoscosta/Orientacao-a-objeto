@@ -86,7 +86,7 @@
     cido adicionado a função de remover um paciente ao programa, então resolvi
     tomar esse atitude e inserir essa funcionalidade ao sistema, logo após comecei 
     a tratar casos de cadastro duplicado como quando se inseri duas pessoas com
-    o mesmo nome
+    o mesmo nome.
 
 ## CASOS DE TESTE
 
@@ -261,3 +261,16 @@ https://user-images.githubusercontent.com/107070061/198831410-7bd9de4e-9a6e-45f6
     a uma ja cadastrada o software pede ao usuario para digitar um sobrenome, para que 
     seja possível diferenciar desta pessoa já cadastrada, com isso confirmando o exito
     na implementação.
+
+### RESULTADO DO DECIMO SEGUNDO CASO DE TESTE E SUA ANÁLISE
+
+        Neste caso foi implentado um tratamento de cadastro, que se refere a duplicação
+    de cpf o que em nosso mundo real não é permitido, para que não houvesse problema no 
+    cadastro tratei esse caso, em primeira tentativa obtive os seguintes resultados:
+
+https://user-images.githubusercontent.com/107070061/198834436-fedefdc9-8610-4362-81a8-f77636de09c4.mp4
+
+        O video mostra que quando ocorre o cadastro com dois cpfs iguais o software acaba
+    por cadastrar em vez de impedir, esse erro ocorreu devido que deixei me passar despercebido
+    que no momento de verificar era necessario fazer o software buscar os endereços seguintes
+    nos nós na lista
