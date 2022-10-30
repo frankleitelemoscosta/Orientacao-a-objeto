@@ -107,6 +107,15 @@
     tive de atualizar o diagrama de classe, e apresento a seguir as mudanças:
 
 
+        Para que se tornasse um pouco mais proximo de um real consultório médico tomei a
+    decisão de fazer com que o programa cadastrasse a ultima data da consulta de um paciente
+    de maneira automatica, ou seja o que isso significa: antes de trazer isso ao software
+    se fosse ser realizado um cadastro de paciente era pedido que fosse inserido manualmente, 
+    ou seja o sistema não era capaz de realizar tal tarefa sozinho, mas agora ele acaba de se
+    tornar capaz. E aqui mostro o que foi alterado tambem no diagrama com essa implementação:
+
+![Automatizacao no processo de cadastrar ultima data de consulta](https://user-images.githubusercontent.com/107070061/198860843-d82111cd-08d6-44ae-92c7-6fbeee141d6a.png)
+
 
 
 ## CASOS DE TESTE
