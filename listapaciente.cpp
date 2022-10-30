@@ -93,7 +93,7 @@ void Listapaciente::mostrarpaciente(int cpf)
     }
 }
 
-bool Listapaciente::remover(string nome)
+void Listapaciente::remover(string nome)
 {
     Paciente *c = new Paciente();//essa corre a lista
     Paciente *a = new Paciente();//essa serve para pegar o nó anterior

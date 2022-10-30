@@ -51,7 +51,7 @@ void Listaconsulta::mostrartodosositens()
     }
 }
 
-bool Listaconsulta::remover(int cpfpaciente)
+void Listaconsulta::remover(int cpfpaciente)
 {
     Consulta *c = new Consulta();//essa corre a lista
     Consulta *a = new Consulta();//essa serve para pegar o nó anterior

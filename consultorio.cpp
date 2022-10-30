@@ -17,7 +17,7 @@ void Consultorio::imprimirlistademedicos(int crm)
     l.mostrarositens(crm);
 }
 
-bool Consultorio::removermedico(int crmremover)
+void Consultorio::removermedico(int crmremover)
 {
     l.remover(crmremover);
 }
@@ -45,7 +45,7 @@ void Consultorio::imprimirconsultas()
     v.mostrartodosositens();
 }
 
-bool Consultorio::removerconsulta(int cpfpaciente)
+void Consultorio::removerconsulta(int cpfpaciente)
 {
     v.remover(cpfpaciente);
 }
@@ -66,7 +66,7 @@ void Consultorio::numerodepacientes()
   cout<<"Numero de pacientes: "<<p.getnumerodepacientes()<<endl;
 }
 
-bool Consultorio::removerpaciente(string nomedopaciente)
+void Consultorio::removerpaciente(string nomedopaciente)
 {
     p.remover(nomedopaciente);
 }

@@ -16,7 +16,7 @@ public:
 
     void inserir_na_lista(int cpfpaciente,int CRMmedico,string hora,int dia, int mes, int ano);
     bool vazia();
-    bool remover(int cpfpaciente);
+    void remover(int cpfpaciente);
     void mostrartodosositens();
 
     void procuradaconsulta(int cpf, string hora);

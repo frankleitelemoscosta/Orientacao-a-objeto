@@ -20,7 +20,7 @@ public:
     Listapaciente();//construtor
 
     void inserir_na_lista(int cpf, string nome, char sexo,string endereco,string telefone,string identidade);
-    bool remover(string nome);
+    void remover(string nome);
     bool vazia();
     void mostrarpaciente(int cpf);
 
