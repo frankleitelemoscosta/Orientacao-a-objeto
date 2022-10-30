@@ -374,3 +374,8 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
     visto que de acordo com o que implementei o software deveria ser mostrado assim que fosse cadastrado um
     paciente novo, o erro ocorreu pois no momento de incrementar e decrementar a variavel eu não estava
     armazenando em lugar algum, fiz a correção deste erro e obtive os seguintes resultados:
+
+![Correçao da contagem de pacientes](https://user-images.githubusercontent.com/107070061/198882011-5443be20-8847-469c-93f2-a44f2ac62d41.png)
+
+        Como havia dito ao fim do cadastro deveria mostrar o numero de pacientes como ocorreu desta
+    vez, demonstrando sucesso em minha correção.
