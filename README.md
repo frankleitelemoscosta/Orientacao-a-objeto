@@ -2,7 +2,7 @@
 
 ## INTRODUÇÃO
 
-    Esse projeto tem por objetivo apresentar o gerenciamento de um consultório médico.
+        Esse projeto tem por objetivo apresentar o gerenciamento de um consultório médico.
     Nossa atual realidade apresenta um auto nível de desenvolvimento técnico e tecnologico, e
     a tecnologia nos trouxe comodidade, e praticidade, um microondas permite ao individuo ter
     seu alimento rapidamente aquecido, o computador permite o armazenamento de uma grande quantidade 
@@ -360,3 +360,17 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
 
         Como é possivel notar neste print foi adicionado uma nova funcionalidade ainda não implementada
     e com ela foi encontrado um paciente especifico, confirmando o exito na implementação.
+
+### RESULTADO DO DESCIMO SETIMO CASO DE TESTE E SUA ANÁLISE
+
+        Este caso se trata da mudança na maneira de contar o número de pacientes presentes no consultório
+    passa a ser bem simples e menos custioso, pois se trata agora apenas de incrementar e decrementar uma
+    variável quando inserido, ou removido um paciente da lista. Em uma primeira tentativa obtive os seguintes
+    resultados:
+
+![contagem](https://user-images.githubusercontent.com/107070061/198879856-83644e05-357e-43b0-b9aa-a8b3b11a20fa.png)
+
+        È fácil perceber que houve um erro, que se trata nesse caso da não impressão do número de pacientes
+    visto que de acordo com o que implementei o software deveria ser mostrado assim que fosse cadastrado um
+    paciente novo, o erro ocorreu pois no momento de incrementar e decrementar a variavel eu não estava
+    armazenando em lugar algum, fiz a correção deste erro e obtive os seguintes resultados:
