@@ -304,3 +304,9 @@ https://user-images.githubusercontent.com/107070061/198835694-ccc6b807-f9d4-48e7
     vai ser cadastrado com um cpf de um paciente real e um medico que realmente trabalhe
     naquele hospital, os resultado são mostrados a seguir:
 
+![Tratamento do caso de não existir paciente ou medico no sistema](https://user-images.githubusercontent.com/107070061/198860079-3096537f-de82-430c-974b-a21de5c798b7.png)
+
+        Como é possível ver se acaso não existir o paciente ou o médico no sistema
+    ele mostrará ao usuário uma mensagem avisando que ou o médico não trabalha ali
+    ou o paciente não está cadastrado.
+
