@@ -116,6 +116,10 @@
 
 ![Automatizacao no processo de cadastrar ultima data de consulta](https://user-images.githubusercontent.com/107070061/198860843-d82111cd-08d6-44ae-92c7-6fbeee141d6a.png)
 
+        Como pedido por meu orientador tambem era necessário adicionar uma funcionalidade
+    ao menu que fosse capaz de encontrar um paciente e uma consulta especifica de tal, alem
+    de que segundo ele era necessário tambem contar o numero de pacientes que estavam no
+    consultorio, e que não havia cido implementado ainda.
 
 ## CASOS DE TESTE
 
@@ -332,3 +336,22 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
     com uma segunda tentativa obtive os seguintes resultados:
 
 ![correção do erro de impressão](https://user-images.githubusercontent.com/107070061/198861816-c1f68513-e2b6-4adc-b5c6-d86a179ecfd9.png)
+
+### RESULTADO DO DECIMO QUINTO CASO DE TESTE E SUA ANÁLISE
+
+        Neste caso adicionei a impressão detalhada para os médicos e pacientes,
+    ou seja, quando fosse imprimir seria necessário colocar o crm do médico
+    ou no caso do paciente o cpf do mesmo, os resultado seguem a seguir:
+
+![impressão detalhada](https://user-images.githubusercontent.com/107070061/198862496-c6c6f085-3bb0-4feb-b6e8-eca46d0eac77.png)
+
+![correcaçao](https://user-images.githubusercontent.com/107070061/198862514-3afbdf09-9d6c-4892-9bdf-3996ffaac55e.png)
+
+        Como é possível notar quando é chamado a função de impressão seja do paciente ou do médico 
+    é pedido o crm e o cpf, a impressão precisa mostra o sucesso na implementação.
+
+### RESULTADO DO DESCIMO SEXTO CASO DE TESTE E SUA ANÁLISE
+
+        Desta vez implementei mais uma funcionalidade ao menu do usuário 
+    para que fosse possivel encontrar um medico, e a consulta com um paciente
+    especifico, uma primeira tentativa obtive estes resultados:
