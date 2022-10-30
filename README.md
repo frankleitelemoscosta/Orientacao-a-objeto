@@ -330,3 +330,5 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
     e não foi necessário cadastrar uma consulta para perceber que era impossível o usuario 
     vizualizar a data da ultima consulta de um paciente qualquer, alterando novamente o código
     com uma segunda tentativa obtive os seguintes resultados:
+
+![correção do erro de impressão](https://user-images.githubusercontent.com/107070061/198861816-c1f68513-e2b6-4adc-b5c6-d86a179ecfd9.png)
