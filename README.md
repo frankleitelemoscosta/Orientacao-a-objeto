@@ -355,3 +355,8 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
         Desta vez implementei mais uma funcionalidade ao menu do usuário 
     para que fosse possivel encontrar um medico, e a consulta com um paciente
     especifico, uma primeira tentativa obtive estes resultados:
+
+![Captura de tela de 2022-10-30 01-50-25](https://user-images.githubusercontent.com/107070061/198863145-576b170d-a795-472e-be28-3b591f95d2ab.png)
+
+        Como é possivel notar neste print foi adicionado uma nova funcionalidade ainda não implementada
+    e com ela foi encontrado um paciente especifico, confirmando o exito na implementação.
