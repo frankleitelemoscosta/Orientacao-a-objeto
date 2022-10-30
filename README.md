@@ -121,6 +121,14 @@
     de que segundo ele era necessário tambem contar o numero de pacientes que estavam no
     consultorio, e que não havia cido implementado ainda.
 
+        Por ultimo corrigi um erro que não prejudicou o desenvolvimento do projeto, porem
+    o compilador ficou apontando durante todo o projeto dizendo que não condizia o retorno 
+    que era feito com o tipo das funções onde estes estavam, assim decide mudar as funções 
+    remover de todas as listas de booleano para void, para que fosse resolvido o problema.
+
+        Chego ao fim atualizando o restante do diagrama de classe que terá sua versão 
+    final disponizado aqui em meio aos repositórios.
+
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
@@ -141,7 +149,7 @@
     a classe onde estaria informações pessoais como nome, cpf, endereço seria uma classe compar-
     tilhada com outras como a classe paciente, que tambem pode ter as mesmas catacterísticas.
 
-### RESULTADO DO  CASO DE TESTE E SUA ANÁLISE
+### RESULTADO DO SEGUNDO CASO DE TESTE E SUA ANÁLISE
 
         Em uma primeira tentativa ocorreu um pequeno erro, devido a introdução 
     de um construtor vazio em uma classe e a não declaração do mesmo no arquivo
@@ -170,13 +178,12 @@
         Em uma primeira tentativa houve um erro, visto que não tinha cido tratado o caso 
     para remoção de apenas um elemento na lista de medicos, o video a seguir mostra isso:
 
-https://user-images.githubusercontent.com/107070061/197761099-7f30a397-c700-4981-820e-f970b0fae0d7.mp4
-
+https://user-images.githubusercontent.com/107070061/198904705-98b0b154-81e6-483c-a4b8-67246674587a.mp4
 
         Em uma segunda tentativa após alterações no código da lista onde se localizava a função de remo-
     ção, foi obtido exito como mostra o curto video a seguir:
 
-https://user-images.githubusercontent.com/107070061/197824596-f3391405-570c-4ad0-aeac-abcc6b856c17.mp4
+https://user-images.githubusercontent.com/107070061/198905068-a3dea9c1-a992-42f4-b174-44f33cd9dd57.mp4
 
 ### RESULTADO DO QUARTO CASO DE TESTE E SUA ANÁLISE
 
@@ -386,3 +393,11 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
     feita pelo compilador visto que em uma função do tipo boolena estava sendo retornado 
     como um em uma função void, ou seja, não era retornado nada, neste teste reestruturei
     as partes do código que aconteciam esse problema, e obtive os seguintes resultados:
+
+![ERRO DOS WARNINGS](https://user-images.githubusercontent.com/107070061/198901537-aeb91668-c12d-4565-8b0f-bc786d0a6d32.png)
+
+![CORREÇÃO DOS WARNINGS](https://user-images.githubusercontent.com/107070061/198901563-769674be-c5d2-4d81-ac67-73cb5a63b00b.png)
+
+        Como é mostrado na segunda imagem o compilador parou de advertir que
+    havia um retorno vazio nas funções de remoção de elementos das listas do
+    projeto.
