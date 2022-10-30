@@ -328,4 +328,5 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
 
         È possível notar que apesar de ter ocorrido o cadastro de um paciente, medico
     e não foi necessário cadastrar uma consulta para perceber que era impossível o usuario 
-    vizualizar a data da ultima consulta de um paciente qualquer.
+    vizualizar a data da ultima consulta de um paciente qualquer, alterando novamente o código
+    com uma segunda tentativa obtive os seguintes resultados:
