@@ -379,3 +379,10 @@ https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853
 
         Como havia dito ao fim do cadastro deveria mostrar o numero de pacientes como ocorreu desta
     vez, demonstrando sucesso em minha correção.
+
+### RESULTADO DO DECIMO OITAVO CASO DE TESTE E SUA ANÁLISE
+    
+        Estava ocorrendo desde a criação das listas no projeto uma notificação de warning 
+    feita pelo compilador visto que em uma função do tipo boolena estava sendo retornado 
+    como um em uma função void, ou seja, não era retornado nada, neste teste reestruturei
+    as partes do código que aconteciam esse problema, e obtive os seguintes resultados:
