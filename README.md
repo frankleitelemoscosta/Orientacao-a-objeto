@@ -117,7 +117,6 @@
 ![Automatizacao no processo de cadastrar ultima data de consulta](https://user-images.githubusercontent.com/107070061/198860843-d82111cd-08d6-44ae-92c7-6fbeee141d6a.png)
 
 
-
 ## CASOS DE TESTE
 
         O primeiro teste realizado foi o teste do menu, esse teste foi realizado 
@@ -319,3 +318,14 @@ https://user-images.githubusercontent.com/107070061/198835694-ccc6b807-f9d4-48e7
     ele mostrará ao usuário uma mensagem avisando que ou o médico não trabalha ali
     ou o paciente não está cadastrado.
 
+### RESULTADO DO DECIMO QUARTO CASO DE TESTE E SUA ANÁLISE
+
+        Desta vez fiz a implementação do cadastro da ultima consulta de um paciente
+    de maneira automática alterarado o código da classe da lista do paciente, de
+    primeira tentativa obtive os seguintes resultados:
+
+https://user-images.githubusercontent.com/107070061/198861282-1281f290-7337-4853-a845-cfdb6d06f70f.mp4
+
+        È possível notar que apesar de ter ocorrido o cadastro de um paciente, medico
+    e não foi necessário cadastrar uma consulta para perceber que era impossível o usuario 
+    vizualizar a data da ultima consulta de um paciente qualquer.
